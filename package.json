@@ -1,7 +1,7 @@
 {
-  "name": "wdd330-project",
+  "name": "wdd330-Final-Portfolio",
   "version": "1.0.0",
-  "description": "Book reading app for WDD330",
+  "description": "Final Portfolio my showing work for WDD330",
   "main": "main.js",
   "scripts": {
     "start": "snowpack dev",
@@ -11,7 +11,7 @@
     "test": "jest",
     "babel": "babel src -d dist"
   },
-  "author": "Team 05",
+  "author": "Jeremy Troy Suchanski",
   "devDependencies": {
     "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.3",
