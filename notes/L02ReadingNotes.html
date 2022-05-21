@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="L02 Readings notes for Jeremy T. Suchanski in WDD 330:
+    Web Frontend Development at Brigham Young University - Idaho">
+    <title>WDD330 L02 Readings Notes</title>
+    <link rel="stylesheet" href="../css/notes.css">
+</head>
+<body>
+    <p class= "calibri"><span class= "romans">Jeremy Troy Suchanski</span></p>
+<p class= "calibri"><span class= "romans">Web Frontend Development II</span></p>
+<p class= "calibri"><span class= "romans">Gary James</span></p>
+<p class= "calibri"><span class= "romans">April 20, 2022</span></p>
+<p class= "calibir2"><strong><span class= "romans2">L02 Reading Notes</span></strong></p>
+<p class= "calibir2"><strong><span class= "romans">Master Mobile UX (Notes)</span></strong></p>
+<p class= "calibri"><span class= "romans">&ldquo;If you design for the smallest, least powerful device first, then you will focus on the content, and your core functionality. That leads to simple, beautiful apps. If you do it the other way around, it&rsquo;ll be like trying to put a marshmallow into a piggybank, which is neither simple nor beautiful.&rdquo; Joel Marsh &ndash; the Hipper Element</span></p>
+<p class= "calibri3"><span class= "romans">Design paradigm was design for desktops (which reach its peak in 30 years in 2011)</span></p>
+<ul class= "under">
+    <li><span class= "romans3">1 maybe 2 available per household</span></li>
+    <li><span class= "romans3">Replaced every 4 &ndash; 5 years</span></li>
+    <li><span class= "romans3">Sales have been declining since 2011 &amp; resulting in availability being way down (was 5 -7 to choose from &amp; now 1 possibly 2)</span></li>
+</ul>
+<p class= "calibri3"><span class= "romans">2007 iPhone was introduced by Steve Jobs, saw a rise in 2 years, 2009 and the by 2011 mobile usage started to skyrocket &amp; after 2011 it exploded. This began a design paradigm shift with a huge range of devices with different screen sizes and resolutions for the design.</span></p>
+<ul class="decimal_type" class= "under">
+    <li><span class= "romans3">2 &ndash; 3 devices per person per household</span></li>
+    <li><span class= "romans3">Replaced every 2 years or so</span></li>
+    <li><span class= "romans3">People in tech every 1 year or sooner</span></li>
+    <li><span class= "romans3">Mobile web traffic 2013 &ndash; 2014 went up 18.6% and passed the 50% mark</span></li>
+    <li><span class= "romans3">Largest % of people walking around have their heads down in their phone (not laptop)</span></li>
+</ul>
+<p class= "calibri3"><span class= "romans">&ldquo;The simple guideline is whatever you are doing &ndash; do mobile first,&rdquo; Eric Schmidt, World Mobile Congress Keynote 2012</span></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">Start small &amp; scale up:</span></strong><span class= "romans3">&nbsp;ensures your really <strong>concentrating on</strong> your <strong>content</strong> &amp; your <strong>functionality&nbsp;</strong>+ things tend to grow from small to big really well</span></li>
+    <li><span class= "romans3">Mobile is not a fad, it&rsquo;s here to stay. So, new paradigm design = <strong>Mobile First</strong></span></li>
+    <li><span class= "romans3">Problem is many people still aren&rsquo;t listening to this.</span></li>
+    <li><span class= "romans3">Responsive doesn&rsquo;t mean mobile first. Most people do &ldquo;Responsive Retrofitting&rdquo;: taking what you already have and making it work on mobile because (#1 it&rsquo;s cheaper &amp; faster than a ground up rewrite #2 gives users a better experience than desktop only site). However, it doesn&rsquo;t address issues like (#1 screen real estate issues #2 touch interaction issues)</span></li>
+    <li><span class= "romans3">Mobile First: full rebuild <u>downsides</u> (#1 time consuming #2 costly #3 like trying to shove a marshmallow into a piggybank) <u>upsides</u> (#1 provides better experience across many devices #2 addresses constraints on mobile size/bandwidth #3 future friendly &amp; ready for growth)</span></li>
+</ul>
+<p class= "calibri3"><span class= "romans">&ldquo;It&rsquo;s really hard to design products by focus groups. A lot of times, people don&rsquo;t know what they want until you show it to them.&rdquo; Steve Jobs &ndash; Apple</span></p>
+<ul class= "under">
+    <li><span class= "romans3">Don&rsquo;t listen to what they say, observe what they are doing &amp; find a way to fill their needs as simply as possible.</span></li>
+    <li><strong><span class= "f-size">Be There</span></strong><span class= "romans3">: can&rsquo;t do anything if it&rsquo;s not there for the customer.</span></li>
+    <li><strong><span class= "f-size">Be Useful</span></strong><span class= "romans3">: only 9% of users will stay if it doesn&rsquo;t satisfy their needs, provide them what they came for as quickly as possible.</span></li>
+    <li><strong><span class= "f-size">Be Quick</span></strong><span class= "romans3">: not just fast loading but functionality too, excessive steps cause user frustration &amp; abandonment. Make interactions smooth and seamless so the user doesn&rsquo;t even notice.</span></li>
+    <li><strong><span class= "f-size">Reachability</span></strong><span class= "romans3">: how a user handles their device when using a mobile device (#1 - 75% rely on their thumbs #2 - 49% use a one-handed grip #3 meaning the bottom of the screen is easiest to reach). Put key items in easiest to reach places.</span></li>
+    <li><strong><span class= "f-size">Speed Matters</span></strong><span class= "romans3">: it effects business (examples: #1 Google: &frac12; second delay = 20% drop in traffic #2 Bing: 2 second delay = 4% drop in revenue #3 Aol: fastest 10% of users stay 50% longer)</span></li>
+</ul>
+<p class= "calibri4"><strong><span class= "romans">To ensure things are loading quickly for our users</span></strong><span class= "romans">:</span></p>
+<p class= "calibri5"><strong><span class= "romans">#1&nbsp;</span></strong><span class= "romans">reduce image use throughout our site &amp; apps</span></p>
+<p class= "calibri5"><strong><span class= "romans">#2&nbsp;</span></strong><span class= "romans">use SVG &amp; Webfonts for images = lower bandwidth</span></p>
+<p class= "calibri5"><strong><span class= "romans">#3&nbsp;</span></strong><span class= "romans">optimize and minimize CSS &amp; JS files</span></p>
+<p class= "calibri5"><strong><span class= "romans">#4&nbsp;</span></strong><span class= "romans">GZIP files to remove unnecessary data (compressing files reducing load time)</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Networks Matter</span></strong><span class= "romans3">: not everybody has the latest &amp; greatest (example: #1 2013 global market penetration - 4G subscribers = 1.77% (126 million) #2 &ndash; 3G subscribers = &nbsp;24.55% (1.7 billion)</span></li>
+    </ul>
+</div>
+<p class= "calibri6"><span class= "romans">&ldquo;The trouble with software is . . . it sucks.&rdquo; Stewart Alsop &ndash; Venture Capitalist</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">To make things better for everyone</span></strong><span class= "romans3">:&nbsp;</span></li>
+    </ul>
+</div>
+<p class= "calibri4"><strong><span class= "romans">#1</span></strong><span class= "romans">&nbsp;make sure the most commonly used menu items are located at the bottom in easiest reachable area. Benefits: (#1 this creates a perception of speed #2 improved engagement rates #3 increased user satisfaction)</span></p>
+<p class= "calibri7"><strong><span class= "romans">#2&nbsp;</span></strong><span class= "romans">perception matters make things as obvious as possible (example, Hamburger menu 3 lines &ndash; link: with just word menu = -22.2% less clicks; 3 line symbol with word menu in outlined box = +5.7% more clicks; just word menu in outlined box = +20% more clicks)</span></p>
+<p class= "calibri3"><span class= "romans">&ldquo;[The constraints of Mobile] push you toward more focused simplified solutions. You can only fit so much on the screen . . . Mobile is a great forcing function for simplicity.&rdquo; Luke Wroblewski &ndash; Co-Founder of Polar and Bagcheck</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Mobile Inputs (Forms)</span></strong><span class= "romans3">: reduce users cognitive load &amp; make them think less (even if it&rsquo;s subconsciously)</span></li>
+    </ul>
+</div>
+<p class= "calibri4"><strong><span class= "romans">#1&nbsp;</span></strong><span class= "romans">minimize inputs by only having required inputs/ reducing unnecessary input lines</span></p>
+<p class= "calibri4"><strong><span class= "romans">#2&nbsp;</span></strong><span class= "romans">break larger forms into sections with a progress indicator &ndash; it&rsquo;s less overwhelming</span></p>
+<p class= "calibri4"><strong><span class= "romans">#3&nbsp;</span></strong><span class= "romans">enable autocomplete &ndash; Benefits (#1 greatly reduces time required to fill in form #2 reduces errors #3 helps to increase conversions)</span></p>
+<p class= "calibri4"><strong><span class= "romans">#4&nbsp;</span></strong><span class= "romans">passwords &ndash; show passwords by default instead of masking (but allow users to hide them easily if they need to do so) &ldquo;Typically, masking passwords doesn&rsquo;t even increase security, but it does cost you business due to log in failures.&rdquo; -Nielson Norman Group</span></p>
+<p class= "calibri4"><strong><span class= "romans">#5&nbsp;</span></strong><span class= "romans">credit card information &ndash; make it as simple &amp; intuitive as possible, auto advance user through the process &amp; provide simple visual indicators (space credit card numbers automatically) of what&rsquo;s being entered (example: 1 line entry field by Brad Frost)</span></p>
+<p class= "calibri4"><strong><span class= "romans">#6&nbsp;</span></strong><span class= "romans">keyboard &ndash; provide best one for input being entered (when taking numbers, ensure the number keypad is used on Mobile)</span></p>
+<p class= "calibri7"><strong><span class= "romans">#7&nbsp;</span></strong><span class= "romans">phone numbers &ndash; linking phone numbers on your website using an &lt;a&gt; tag (example: &lt;a href=</span><a href="tel:14035551234"><span class= "romans">tel:14035551234</span></a><span class= "romans">&gt;403-555-1234&lt;/a&gt;) makes it much easier for people to call from mobile devices (don&rsquo;t force a copy &amp; paste)</span></p>
+<p class= "calibri3"><span class= "romans">&ldquo;End users, not technologies, shape the market. [So] marketers need to stay abreast not only of technological developments but also of the way people respond to them.&rdquo; Matt Haig &ndash; Author</span></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">Mobile Advertising</span></strong><span class= "romans3">: before you advertise, research</span></li>
+    <li><strong><span class= "f-size">Late 90s</span></strong><span class= "romans3">: little advertising</span></li>
+    <li><strong><span class= "f-size">Early 2000s</span></strong><span class= "romans3">: advertisers started seeing the benefits of marketing to web users</span></li>
+    <li><strong><span class= "f-size">2010 &amp; on</span></strong><span class= "romans3">: more advertising than actual content on many pages</span></li>
+    <li><strong><span class= "f-size">Mobile advertising market spending</span></strong><span class= "romans3">: 2013: under 25 billion - 2017: under 150 billion</span></li>
+    <li><strong><span class= "f-size">Pop up</span></strong><span class= "romans3">: one of the most detested things on the web</span></li>
+    <li><strong><span class= "f-size">Mobile Ad Do&rsquo;s</span></strong><span class= "romans3">: #1 make them small and simple (it can go big after being clicked) #2 video ads are huge today and generally result in higher conversion rates #3 small window that shows the full add underneath as you scroll</span></li>
+    <li><strong><span class= "f-size">&ldquo;</span></strong><span class= "romans4">The fallen state of our Internet is a direct, if unintentional, consequence of choosing advertising as the default model to support online content and services.&rdquo; Ethan Zuckerman &ndash; Creator of the Pop-up ad&nbsp;</span></li>
+    <li><strong><span class= "f-size">Stop using Pop-ups and Pop-overs</span></strong></li>
+    <li><strong><span class= "f-size">Remember your visitors don&rsquo;t visit your website to look at ads</span></strong><span class= "f-size">: they came for content, so give them what they came for &amp; use your advertising sparingly</span></li>
+    <li><strong><span class= "f-size">Keep ads simple &amp; sleek</span></strong><span class= "romans3">: ask yourself &ldquo;what would I personally think of this ad coming up in an article that I was reading?&rdquo; Upsettin the user will surely bring lower conversions.</span></li>
+    <li><strong><span class= "f-size">Make it as unobtrusive as possible</span></strong><span class= "romans3">: content first</span></li>
+</ul>
+<p class= "calibir2"><strong><span class= "romans">Ch12: Object-Oriented Programming in JavaScript (Notes)</span></strong></p>
+<p class= "calibri3"><span class= "romans">Object Oriented Programming (OOP): separating code into objects having properties &amp; methods</span></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">3 Main Concepts</span></strong><span class= "romans3">: #1 encapsulation (keeping all the programming logic inside an object and making methods available to implement the functionality) #2 polymorphism (various objects sharing the same method, but also having the ability to override shared methods with a more specific implementation) #3 inheritance (taking an object that already exists and inheriting all its properties and methods, plus adding new properties and methods)</span></li>
+    <li><strong><span class= "f-size">Prototype-based language</span></strong><span class= "romans3">: uses actual objects as the blueprint for creating more objects. Even though ES6 now supports classes, it still uses this prototypal inheritance model in the background.&nbsp;</span></li>
+    <li><strong><span class= "f-size">Constructor function</span></strong><span class= "romans3">: The keyword <strong><u>this</u></strong> is used to represent the object that will be returned by the constructor function. Then create an instance of the object constructor function using the <strong><u>new&nbsp;</u></strong>operator. Parenthesis are not required after the object name unless any arguments need to be provided. It then becomes an <strong><u>instanceof</u></strong> the object&rsquo;s constructor function.</span></li>
+    <li><strong><span class= "f-size">Literal syntax</span></strong><span class= "romans3">: creating an object &ndash; (example: const literalObject = {};)</span></li>
+    <li><strong><span class= "f-size">Object constructor function syntax</span></strong><span class= "romans3">: creating an object &ndash; (example: constructedObject = new Object();)</span></li>
+    <li><strong><span class= "f-size">Arrays</span></strong><span class= "romans3">: it&rsquo;s recommended to always use literals to create arrays because if only 1 argument is given, it sets the array&rsquo;s length property instead of putting the number as the 1<sup>st</sup> entry, and returns an array full of undefined.</span></li>
+    <li><strong><span class= "f-size">New (ES6) class declaration syntax</span></strong><span class= "romans3">: does exactly the same thing as a constructor function. To create an instance of the Dice class, the <strong><u>new</u></strong> operator is again used. The ES6 class declarations are preferable to the constructor function syntax because they are more succinct, easier to read and all code in a class definition is implicitly in strict mode, so doesn&apos;t need the &apos;use strict&apos; statement.</span></li>
+</ul>
+<p class= "calibri8"><strong><span class= "romans">Example of creating object with class declaration</span></strong><span class= "romans">:&nbsp;</span></p>
+<p class= "calibri8"><span class= "romans">class Dice {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; constructor(sides=6) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; this.sides = sides;</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp;</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; roll() {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; return Math.floor(this.sides * Math.random() + 1)</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<p class= "calibri8"><strong><span class= "romans">Example of creating an instance of that class declaration object</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">const blueDice = new Dice(20);</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Constructor Property</span></strong><span class= "romans3">: returns the constructor function that created it. The constructor property can be used to instantiate a copy of an object, without having to reference the actual constructor function or class declaration directly.</span></li>
+    </ul>
+</div>
+<p class= "calibri8"><strong><span class= "romans">Example</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">const greenDice = new redDice.constructor(10);</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Static Methods</span></strong><span class= "romans3">: static keyword can be used in class declarations to create static methods.</span></li>
+    </ul>
+</div>
+<p class= "calibri8"><strong><span class= "romans">Example</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">static description() {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; return &apos;A way of choosing random numbers&apos;</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">Static methods are not available to instances of the class only to the actual class name.</span></p>
+<p class= "calibri8"><strong><span class= "romans">Example of the method being called</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">Dice.description()</span></p>
+<ul class= "under">
+    <li class="arrow-ind"><strong><span class= "f-size">Prototypal Inheritance Model</span></strong><span class= "romans3">: So, any properties or methods of a class&rsquo;s prototype can be accessed by every object instantiated by that class.</span></li>
+    <li class="arrow-ind"><strong><span class= "f-size">The Prototype Property</span></strong><span class= "romans3">: All classes and constructor functions have a prototype property that returns an object. Since the prototype is just an object, we can add new properties &amp; methods by assignment.</span></li>
+</ul>
+<p class= "calibri8"><strong><span class= "romans">Example of new property through the prototype</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">Turtle.prototype.weapon = &apos;Hands&apos;;</span></p>
+<p class= "calibri8"><strong><span class= "romans">Example of new method through the prototype</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">Turtle.prototype.attack = function(){</span></p>
+<p class= "calibri8"><span class= "romans">return `Feel the power of my ${this.weapon}!`;</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">Ways to find out the prototype</span></strong><span class= "romans3">: #1 via the constructor function&rsquo;s prototype property (example: raph.constructor.prototype;) #2 use the Object.getPrototypeOf() method, which takes the object as a parameter (example:</span> <span class= "romans3">Object.getPrototypeOf(raph);) #3 use the non-standard __proto__ property. This is known as dunder proto, which is short for &apos;double underscore proto&apos; (example: raph.__proto__) It is not considered part of the official specification, and it&rsquo;s recommended that getPrototypeOf() is used instead. The __proto__ property can also be used to set the prototype of an object by assignment, but its use has been deprecated in favor of the setPrototypeOf() method. Also the isPrototypeOf() method that returns a boolean to check if it&rsquo;s the prototype of an instance.</span></li>
+    <li><strong><span class= "f-size">Own Properties and Prototype Properties</span></strong><span class= "line-h">: Every object has a hasOwnProperty() method that can be used to check if a method is its own property, or is inherited from the prototype. The difference between an object&apos;s own properties and prototype properties is prototype properties are shared by every instance of the Turtle class and it will always be the same value.</span></li>
+    <li><strong><span class= "f-size">Overwriting a Prototype</span></strong><span class= "romans3">: It is not possible to overwrite the prototype by assigning it to a new object literal if class declarations are used. It is possible to do this if constructor functions are used. This is another reason why it&rsquo;s recommended to use class declarations instead of constructor functions.</span></li>
+    <li><strong><span class= "f-size">Overwriting Prototype Properties</span></strong><span class= "romans3">: An object instance can overwrite any properties or methods inherited from its prototype by simply assigning a new value to them. These properties will now become an &apos;own property&apos; of the instance object. Any own properties will take precedence over the same prototype property when used in methods.&nbsp;</span></li>
+    <li><strong><span class= "f-size">Prototype Should Be Used For</span></strong><span class= "romans3">: It should be used to define any properties that will remain the same for every instance of the class. Methods are likely to be the same for all instances of a constructor, so it&apos;s fine to add methods to the prototype. Never use arrays or objects as a default value in prototype. This is not a problem if arrays or objects are set as default values from within the constructor function in the class declaration. <u>Any extra methods and properties that need to be augmented to the class declaration after it&rsquo;s been defined can be added to the prototype. These will be added to all instances, even those that have already been created.</u></span></li>
+    <li><strong><span class= "f-size">Public and Private Methods</span></strong><span class= "romans3">: (Public) By default, an object&rsquo;s methods are public in JavaScript. Methods and properties are said to be public because they can be queried directly and changed by assignment. The dynamic nature of the language means that an object&rsquo;s properties and methods can be changed after it has been created. Giving users or external services too much access to properties and methods could be a recipe for disaster. (Private) Variable scope can be used to keep some properties and methods private inside of a class declaration. With a getter &amp; setter function things don&apos;t work much differently than before, except functions are now being used to access and change the private properties.</span></li>
+    <li><strong><span class= "f-size">Inheritance</span></strong><span class= "romans3">: the prototype is just another object, so it also has its own prototype, which in turn has its own prototype... and so on, creating a chain of inheritance. The prototype of the Object constructor function has a large number of methods that are inherited by all objects. The reason why the prototype appears as an empty object literal is because all of its methods are not enumerable.</span></li>
+    <li><strong><span class= "f-size">Enumerable Properties</span></strong><span class= "romans3">: There is a method called propertyIsEnumerable() that every object has that can be used to check if a property is enumerable. Properties of objects in JavaScript are said to be enumerable or non-enumerable. If they aren&apos;t enumerable, this means they will not show up when a for-in loop is used to loop through an object&rsquo;s properties and methods. All properties and methods that are created by assignment are enumerable. Good practice is for all built-in methods to be non-enumerable, and any user-defined methods to be made enumerable so user-defined methods are easy to find.</span></li>
+    <li><strong><span class= "f-size">Inheritance Using <u>extends</u></span></strong><span class= "romans3">: A class can inherit from another class using the extends keyword in a class declaration. This creates a child class that can access any properties and call any methods of the parent class through the keyword <strong><u>super</u></strong>.&nbsp;</span></li>
+</ul>
+<p class= "calibri8"><strong><span class= "romans">Example</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">class NinjaTurtle extends Turtle {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; constructor(name) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; super(name);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; this.weapon = &apos;hands&apos;;</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; attack() { return `Feel the power of my ${this.weapon}!` }&nbsp;</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">Polymorphism</span></strong><span class= "romans3">: The concept of polymorphism means that different objects can have the same method, but implement it in different ways. The advantage of this is that higher-level functions are able to call a single method, even though it may be implemented in various ways.</span></li>
+    <li><strong><span class= "f-size">Primitives (number, string, and boolean)</span></strong><span class= "line-h">: are actually without their own methods. The primitive wrapper objects Number, String, and Boolean are used in the background to provide primitive values with methods.</span></li>
+    <li><strong><span class= "f-size">Adding Methods to Built-in Objects</span></strong><span class= "romans3">: It is possible to add more methods to the prototype of JavaScript&rsquo;s built-in objects &mdash; this practice is known as monkey-patching, but it&rsquo;s mostly frowned upon in the JavaScript community, despite it being an incredibly powerful technique. The current consensus in the JS community is that this shouldn&apos;t be done, so you should avoid monkey-patching any of the built-in object constructor prototypes, unless you have a very good reason.</span></li>
+</ul>
+<p class= "calibri8"><strong><span class= "romans">Example of adding a method</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">Number.prototype.isEven = function() {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; return this%2 === 0;</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<p class= "calibri8"><span class= "romans">An alternative way to avoid causing problems is to use extends to subclass a built class and create your own class. It has the advantage of not interfering with the built-in array class at all. For example, you could create your own array class by extending the built in array class, like so:</span></p>
+<p class= "calibri8"><span class= "romans">class myArray extends Array {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; constructor(...args){</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; super(...args);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; delete(i) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; return this.splice(i,1);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Property Attributes and Descriptors</span></strong><span class= "romans3">: All object properties have the following attributes stored in a property descriptor - #1 value (default = undefined) #2 writable (default = false) #3 enumerable (default = false) #4 configurable (default = false)</span></li>
+    </ul>
+</div>
+<p class= "calibri8"><strong><span class= "romans">Object.getOwnPropertyDescriptor()&nbsp;</span></strong><span class= "romans">method allows us to see the property descriptors</span></p>
+<p class= "calibri8"><strong><span class= "romans">Object.defineProperty()&nbsp;</span></strong><span class= "romans">method allows us to add properties to an object. Any attributes left out will take the default values.</span></p>
+<ul class= "under">
+    <li class="arrow-ind"><strong><span class= "f-size">Getters and Setters</span></strong><span class= "romans3">: An object property descriptor can have get() and set() methods instead of a value attribute. All objects must have one or the other, they can&apos;t have both.</span></li>
+    <li class="arrow-ind"><strong><span class= "f-size">Creating Objects from Other Objects</span></strong><span class= "romans3">: It&rsquo;s possible to avoid using classes altogether, and create new objects based on another object that acts as a &apos;blueprint&apos; or prototype instead. The Object() constructor function has a method called <strong><u>create</u></strong> that can be used to create a new object that is an exact copy of the object that is provided as an argument. We can create an instance of the object using the Object.create() method.</span></li>
+</ul>
+<p class= "calibri8"><strong><span class= "romans">Example of creating an instance using Object.create() method</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">const lois = Object.create(Human);</span></p>
+<ul class= "under">
+    <li class="arrow-ind"><strong><span class= "f-size">Object-Based Inheritance</span></strong><span class= "romans3">: One object can also act like a &lsquo;super-class&rsquo;, and become the prototype of another object. This will have all the properties and methods that the first object has, but with some extras.</span></li>
+    <li class="arrow-ind"><strong class="arrow-ind"><span class= "f-size">Object Prototype Chain</span></strong><span class= "romans3">: Creating objects from objects will create a prototype chain.</span></li>
+</ul>
+<p class= "calibri8"><span class= "romans">Every time a new object is created using the Object.create() method, the new object inherits all the properties and methods from the parent object, which becomes the new object&rsquo;s prototype. (The instanceof operator will not work when objects have been created this way. It only works when using constructor functions to create objects.)</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Mixins</span></strong><span class= "romans3">: A mixin is a way of adding properties and methods of some objects to another object without using inheritance. It allows more complex objects to be created by &lsquo;mixing&rsquo; basic objects together.</span></li>
+    </ul>
+</div>
+<p class= "calibri8"><strong><span class= "romans">Object.assign()&nbsp;</span></strong><span class= "romans">method provides the basic mixin functionality. This will assign to the object provided as the first argument all of the properties from any objects provided as further arguments. Issue = (If any of the properties being mixed in are arrays or nested objects, only a shallow copy is made.) To avoid a shallow copy, create your own mixin() function that will assign all properties of an object to another object as a deep copy:</span></p>
+<p class= "calibri8"><span class= "romans">function mixin(target,...objects) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; for (const object of objects) { &nbsp;&nbsp;</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; if(typeof object === &apos;object&apos;) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; for (const key of Object.keys(object)) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (typeof object[key] === &apos;object&apos;) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; target[key] = Array.isArray(object[key]) ? [] : {};</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mixin(target[key],object[key]);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Object.assign(target,object); &nbsp;</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; return target;</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">Shallow copy</span></strong><span class= "romans3">: are copied by assignment, they are only copied by reference. This means that another object is not actually created in memory; the new reference will just point to the old object. Any changes that are made to either objects will affect both of them.</span></li>
+    <li><strong><span class= "f-size">Deep or Hard copy</span></strong><span class= "romans3">: creates a completely new object that has all the same properties as the old object. So, when a hard copy is changed, the original remains the same.</span></li>
+    <li><strong><span class= "f-size">Using Mixins to Add Properties</span></strong><span class= "romans3">: add many properties to an object all at once.</span></li>
+    <li><strong><span class= "f-size">Using Mixins to Create a copy() Function</span></strong><span class= "romans3">: it can be used to make an exact, deep copy of an object:</span></li>
+</ul>
+<p class= "calibri8"><span class= "romans">function copy(target) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; const object = &nbsp;Object.create(Object.getPrototypeOf(target));</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; mixin(object,target);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; return object;</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Factory Functions</span></strong><span class= "romans3">: a function that can be used to return an object.</span></li>
+    </ul>
+</div>
+<p class= "calibri8"><strong><span class= "romans">Example of factory function</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">function createSuperhuman(...mixins) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; const object = copy(Superhuman);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; return mixin(object,...mixins);</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">Using the Mixin Function to Add Modular Functionality</span></strong><span class= "romans3">: sometimes you just want to add properties and methods without linking the two objects together. The mixin() function lets you encapsulate properties and methods in an object, then add them to other objects without the overhead of an inheritance chain being created.</span> <span class= "line-h">For inheritance from mixin objects the object has something verses is something.</span></li>
+    <li><strong><span class= "f-size">Chaining Functions</span></strong><span class= "romans3">: If a method returns <strong><u>this</u></strong>, its methods can be chained together to form a sequence of method calls that are called one after the other. It helps to make code more concise by keeping multiple method calls on the same line. (A big drawback with this technique is that it can make code more difficult to debug. If an error is reported as occurring on a particular line, there is no way of knowing which method caused the error, since there are multiple method calls on that line.)</span></li>
+    <li><strong><span class= "f-size">Binding this</span></strong><span class= "romans3">: used when a function is nested inside another function the value of <strong><u>this</u></strong> loses its scope, and points to the global object inside a nested function. Solutions:</span></li>
+</ul>
+<p class= "calibri8"><span class= "romans">#1 Use that = this:</span></p>
+<p class= "calibri8"><span class= "romans">superman.findFriends = function(){</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; const that = this;</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; this.friends.forEach(function(friend) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; console.log(`${friend.name} is friends with ${that.name}`);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; );</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<p class= "calibri8"><span class= "romans">#2 Use bind(this). The bind() method is a method for all functions and is used to set the value of this in the function:</span></p>
+<p class= "calibri8"><span class= "romans">superman.findFriends = function() {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; this.friends.forEach(function(friend) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; console.log(`${friend.name} is friends with ${this.name}`);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }.bind(this);)</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<p class= "calibri8"><span class= "romans">#3 Use for-of Instead Of forEach(). ES6 introduced the for-of syntax for arrays and this does not require a nested function to be used thus avoiding the problem.</span> <span class= "romans">superman.findFriends = function() {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; for(const friend of this.friends) {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; console.log(`${friend.name} is friends with ${this.name}`);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; };</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<p class= "calibri8"><span class= "romans">#4 Use Arrow Functions. Arrow functions were introduced in ES6, and one of the advantages of using them is that they don&apos;t have their own this context, so this remains bound to the original object making the function call.</span></p>
+<p class= "calibri8"><span class= "romans">superman.findFriends = function() {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; this.friends.forEach((friend) =&gt; {</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; console.log(`${friend.name} is friends with ${this.name}`);</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp; &nbsp; );</span></p>
+<p class= "calibri8"><span class= "romans">}</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Borrowing Methods from Prototypes</span></strong><span class= "romans3">: #1 This is done by making a reference to the function that you want to borrow (that is, without parentheses so that it isn&rsquo;t invoked). Then that method can be called on by another object using the <strong><u>call</u></strong> method. The call() method takes the object that the function is to be applied to as its first argument, then the usual arguments come afterwards.</span></li>
+    </ul>
+</div>
+<p class= "calibri8"><strong><span class= "romans">Example of borrowing a method from a prototype</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">const fly = superman.fly;</span></p>
+<p class= "calibri8"><span class= "romans">fly.call(batman)</span></p>
+<p class= "calibri8"><span class= "romans">#2 The method can also be borrowed directly from an array literal.</span></p>
+<p class= "calibri8"><strong><span class= "romans">Example</span></strong><span class= "romans">:&nbsp;</span></p>
+<p class= "calibri8"><span class= "romans">[].slice.call(arguments, 1, 3)</span></p>
+<p class= "calibri8"><span class= "romans">#3 An array-like object can effectively be turned into an array using the slice() method with no arguments. This will return the arguments object as an array (since the slice() method returns an array):</span></p>
+<p class= "calibri8"><strong><span class= "romans">Example</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">const argumentsArray = Array.prototype.slice.call(arguments);</span></p>
+<p class= "calibri8"><span class= "romans">#4 From ES6 onwards the Array.from() method can be used to turn an array-like object into an array.</span></p>
+<p class= "calibri8"><strong><span class= "romans">Example</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">const argumentsArray = Array.from(arguments);</span></p>
+<p class= "calibri8"><span class= "romans">#5 The spread operator can be used to easily turn an array-like object into an array.</span></p>
+<p class= "calibri8"><strong><span class= "romans">Example</span></strong><span class= "romans">:</span></p>
+<p class= "calibri8"><span class= "romans">const argumentsArray = [...arguments];</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Composition Over Inheritance</span></strong><span class= "romans3">: This approach advocates creating small objects that describe single tasks or behaviors and using them as the building blocks for more complex objects. It sees objects as building blocks that go together to make other objects rather than classes that are monolithic structures layered on top of each other. This design pattern seeks to solve the following problems (The problem Joe Armstrong describes is that if an object requires a banana() method that belongs to the Gorilla class, you have to inherit the whole class to gain access to that method. But as well as the method you wanted, the object also inherits a lot of other properties and methods that are not needed, causing it to become unnecessarily bloated.)</span></li>
+    </ul>
+</div>
+<p class= "calibri8"><strong><span class= "romans">Good practices</span></strong><span class= "romans">: <strong><u>#1</u></strong> If you do decide to use classes, it&rsquo;s recommended to make them &apos;skinny&apos; ― meaning they don&apos;t have too many properties and methods.<strong><u>&nbsp;#2</u></strong> When creating classes is to keep inheritance chains short. A good rule of thumb is to only inherit once, keeping the inheritance chain to just two objects makes unpicking any issues far easier. <strong><u>#3</u></strong> If you want to use a particular method from a class, but it has lots of properties and methods you don&apos;t need, then it would be preferable to just &apos;borrow&apos; the method instead. <strong><u>#4</u></strong> An even better approach would be to move the banana() method into a separate object then add it as a mixin to the Gorilla class, and any other objects that required it.&nbsp;</span></p>
+<p class= "calibri8"><span class= "romans">&nbsp;</span></p>
+<p class= "calibri9"><span class= "romans">&nbsp;</span></p>
+<p class= "calibir2"><strong><span class= "romans">Object methods, &quot;this&quot; (Notes)</span></strong></p>
+<p class= "calibri"><span class= "romans">Actions are represented in JavaScript by functions in properties. A function that is a property of an object is called its method.</span></p>
+<p class= "calibri"><span class= "romans">The value of this is the object &ldquo;before dot&rdquo;, the one used to call the method. It can be used in any function, even if it&rsquo;s not a method of an object. Calling without an object: this == undefined. In JavaScript this is &ldquo;free&rdquo;, its value is evaluated at call-time and does not depend on where the method was declared, but rather on what object is &ldquo;before the dot&rdquo;.</span></p>
+<p class= "calibri"><span class= "romans">Arrow functions are special: they don&rsquo;t have their &ldquo;own&rdquo; this. If we reference this from such a function, it&rsquo;s taken from the outer &ldquo;normal&rdquo; function.</span></p>
+<p class= "calibir2"><strong><span class= "romans">Ch15: Modern JavaScript (Notes)</span></strong></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">Libraries</span></strong><span class= "romans3">: A JavaScript library is a piece of code that provides several methods that make it easier to achieve common tasks.</span> <span class= "romans3">A library will abstract functionality into easier-to-use functions and methods.</span></li>
+    <li><strong><span class= "f-size">jQuery</span></strong><span class= "romans3">: the most popular of all the JavaScript libraries used today. It has a plugin system that makes it easy to extend and use to build common web page elements. Query was released in 2006, originally as a DOM manipulation library. A big advantage of using jQuery is its support for older browsers, particularly Internet Explorer.</span> <span class= "line-h">It has become so popular that many online tutorials assume you&rsquo;re using jQuery rather than just JavaScript.</span> <span class= "romans3">The jQuery library uses the <strong><u>$</u></strong> symbol as a convenient alias for the the global jQuery object that contains all of jQuery&apos;s methods.</span></li>
+    <li><strong><span class= "f-size">Underscore &amp; Lodash</span></strong><span class= "romans3">: very similar libraries to jQuery of functions that provide additional functionality to the language. They both provide a large number of utility functions under the namespace _. It&rsquo;s worth considering using one of these libraries in your projects as it will give you access to a large number of well-tested utility functions that are often required in projects.</span> <span class= "romans3">Both of these libraries are very similar. In fact, Lodash started life as a fork of Underscore.</span></li>
+    <li><strong><span class= "f-size">Advantages of Libraries</span></strong><span class= "romans3">: #1 It will be used by lots of people and thoroughly tested meaning you can be confident that your code will be as bullet-proof as possible in many browsers. #2 there will usually be lots of online documentation and a strong community ready to help out if you become stuck.&nbsp;</span></li>
+    <li><strong><span class= "f-size">Disadvantages of Libraries</span></strong><span class= "romans3">: #1 You need to include the code for the library as well as your own code thus increasing the amount of code that needs to be downloaded by a website, which in some cases can cause performance issues. #2 It might fail to implement the functionality in the precise way that you want it to perform. #3 Using a library can also make your code slower than using plain vanilla JavaScript. (These speed differences can be barely noticeable.)</span></li>
+    <li><strong><span class= "f-size">When to Use a Library</span></strong><span class= "romans3">: #1 Question whether it&rsquo;s worth the extra work. #2 Consider that the popularity of a particular library can be &apos;here today, gone tomorrow&apos; #3 &nbsp;if you find that you&rsquo;re not using many of the methods a library offers, you should consider using a lighter alternative that only focuses on solving one problem #4 &nbsp;if you&rsquo;re only using a handful of methods, maybe avoid using a library altogether and try using plain old JavaScript. #5 It should be used to speed up JavaScript development by making it easier to complete common tasks. #6 A library should not be used because of a lack of understanding of JavaScript. (Reading a library&rsquo;s source code is a great way of learning some powerful JavaScript programming techniques.)</span></li>
+    <li><strong><span class= "f-size">Finding Libraries</span></strong><span class= "romans3">: There&rsquo;s a large number of high-quality JavaScript libraries in this list on Wikipedia (https://en.wikipedia.org/wiki/List_of_JavaScript_libraries), while MicroJS (http://microjs.com/) is a high-quality repository of small JavaScript libraries that focus on specific tasks, and Just (http://anguscroll.com/just/) is a library of functions that just do one task without depending on any other functions or libraries.</span></li>
+    <li><strong><span class= "f-size">Modular JavaScript</span></strong><span class= "romans3">: A module is a self-contained piece of code that provides functions and methods that can then be used in other files and by other modules.</span> <span class= "romans3">The code in a module should have a single purpose, and group together functions with distinct functionality.</span> <span class= "f-size">Modules also allow a public API to be exposed, while keeping the implementation hidden away inside the module. All code in modules is always in strict mode. Variables created in the top-level of a module can only be accessed within that module. Uses the keyword <strong><u>export</u></strong> to specify any values or functions that are to be made available from the module, meaning that not everything in the module needs to be used.</span><span class= "franklin1">&nbsp;</span><span class= "romans3">To use parts of a module the keyword <strong><u>import</u></strong> is used to import into your main JavaScript file.</span> (example: import { PI } from &apos;./pi.js&apos;;) <span class= "romans3">If there are lots of values and functions that need to be imported, then everything in a module file can be imported using the wildcard symbol *.</span></li>
+</ul>
+<p class= "calibri4"><strong><span class= "romans">Default Exports</span></strong><span class= "romans">: Refers to a single variable, function or class in a module that can be imported without having to be explicitly named &amp; is done with keywords <strong><u>export default</u></strong>.</span> <span class= "romans">Having more than one default export will result in a syntax error. For importing - the big difference with default exports is that you don&apos;t need to use curly braces or make any mention of the value that is being imported (example: import PI from &apos;./pi.js&apos;;) The alias that is assigned to the imported module does not have to match its name in the actual module, you can change it. (example: import square function as sq)</span></p>
+<p class= "calibri4"><strong><span class= "romans">Coupling</span></strong><span class= "romans">: The coupling of code refers to how dependent certain elements or modules of code are on each other.&nbsp;</span></p>
+<p class= "calibri4"><strong><span class= "romans">Tightly coupled</span></strong><span class= "romans">: If one relies on the other to run.</span> This often occurs if a piece of code makes hard-coded references to another piece of code, requiring it to be used. <span class= "romans">This will often mean that changes to one piece of code will necessitate changes in the other.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Loosely coupled</span></strong><span class= "romans">: If one piece of code can be easily substituted by another without affecting the final outcome. This is often achieved by referring to common methods that are shared by the alternative modules.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Good design</span></strong><span class= "romans">: Keep code as loosely coupled as possible.</span></p>
+<ul class= "under">
+    <li class="arrow-ind"><strong><span class= "f-size">Node.js Modules</span></strong><span class= "romans3">: uses a slightly different notation called Common JS modules. The <strong><u>module.exports</u></strong> method is used to make any functions available to other files. (example: module.exports = x =&gt; &nbsp;x * x;) To use the module,</span> <span class= "romans3">use the require() method. (example: const square = require(&apos;./squareFunction&apos;);)</span></li>
+    <li class="arrow-ind"><strong><span class= "f-size">MVC Frameworks</span></strong><span class= "romans3">: MVC = Model-View-Controller. It is used in JavaScript code to make it easier to organize large-scale web applications by separating an application into three distinct, independent components that interact with each other. #1 Models (objects that implement the functionality for creating, reading, updating and deleting (known as CRUD tasks) specific pieces of information about the application, as well as any other associated logic and behavior.) #2 Views (provide a visual representation of the model showing all the relevant information and provide a way for users to interact with an application, usually via forms. In a web application, this would be the HTML displayed on a web page.) #3 Controllers (link models and views together by communicating between them. They respond to events, which are usually inputs from a user (entering some data into a form, for example), process the information, then update the model and view accordingly.) Many frameworks have emerged that take care of much of the setup code for you. (examples: #1 Aurelia &ndash; a modern framework #2 Angular &ndash; framework by Google #3 Ember &ndash; a framework to make building large web applications easier)</span></li>
+</ul>
+<p class= "calibri4"><strong><span class= "romans">MV*</span></strong><span class= "romans">: It is quite common to see the acronym MV* used as a catch-all term to describe JavaScript frameworks, rather than MVC.</span> <span class= "romans">This is because many JavaScript implementations do not strictly follow the controller pattern. Sometimes controller code is mixed into the views, and sometimes other patterns are used, such as Model-View-Presenter (MVP), Model-View-ViewModel (MVVM), and AngularJS, which calls itself a Model-View-Whatever (MVW) framework.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Persistence</span></strong><span class= "romans">: Most web applications will need some form of persistence to save the information held in the models in order to maintain state. (examples: #1 Web Storage API #2 send a JSON representation of the model to a back-end database using Ajax whenever a model changes)</span></p>
+<p class= "calibri4"><strong><span class= "romans">Data Binding</span></strong><span class= "romans">: the process of linking the model and view together.</span> <strong><u><span class= "romans">One-way data binding&nbsp;</span></u></strong><span class= "romans">is when a change in the model will automatically result in the view being updated. <strong><u>Two-way data binding</u></strong> is when a change in the view automatically updates the model.</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Templates</span></strong><span class= "romans3">: Many MVC frameworks use templating languages to insert dynamic data into the page. Templates can be written in HTML or another language, such as markdown, which compiles into HTML. They can be whole web pages, but are often just partials &mdash; parts of a page. (Templating languages allow HTML to be separated from the JavaScript program, making maintenance easier because they&rsquo;re no longer tightly coupled.)</span> <span class= "romans3">The templates are often stored in separate files or inside their own script tags.</span></li>
+    </ul>
+</div>
+<p class= "calibri4"><strong><span class= "romans">Mechanism for inserting dynamic data into the HTML</span></strong><span class= "romans">: #1 placing dynamic code inside curly braces (the &apos;mustache&apos; symbol &ndash; example: &lt;h1&gt;Hello {{ name }}&lt;/h1&gt;) #2 placing dynamic code inside the special &lt;% %&gt; tags (made popular by Embedded Ruby &ldquo;ERB&rdquo; &ndash; example: &lt;h1&gt;Hello &lt;%= name %&gt;&lt;/h1&gt;)</span></p>
+<p class= "calibri4"><strong><span class= "romans">Popular templating languages</span></strong><span class= "romans">:</span> #1 <span class= "romans">Handlebars #2 Pug #3 EJS #4 Mustache #5 Nunjucks</span></p>
+<p class= "calibri4"><strong><span class= "romans">Web Components</span></strong><span class= "romans">: The Polymer Project (</span><a href="https://www.polymer-project.org/"><span class= "romans">https://www.polymer-project.org/</span></a><span class= "romans">) is a JavaScript library that attempts to implement web components.</span></p>
+<p class= "calibri4"><strong><span class= "romans">&lsquo;View&rsquo; Libraries</span></strong><span class= "romans">: They are worth considering if you find your user interface is starting to become more complicated or has to react quickly to changes in data. They deal with just the view layer of MVC.</span> <span class= "romans">They have the single goal of making it easier to update the user interface while also keeping what is displayed synchronized with underlying data that it&rsquo;s representing. Most popular two view libraries: #1 React (developed by Facebook) #2 Vue.js (developed by Evan You after he worked on AngularJS at Google) Other popular alternatives that achieve the single goal in a slightly different way: #1 Svelte #2 Inferno #3 Deku #4 Preact #5 Virtual-DOM #6 Moon</span></p>
+<p class= "calibri4"><strong><span class= "romans">Virtual DOM</span></strong><span class= "romans">: React and Vue.js both use the concept to speed up the process of updating HTML pages. Instead of directly changing the DOM a virtual DOM is updated in memory. <strong><u>Reconciliation</u></strong>: It makes rendering web pages extremely fast. The real DOM is only updated when it needs to be &amp; is done by comparing differences between the virtual DOM and actual DOM &amp; only updating those elements that have actually changed.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Components</span></strong><span class= "romans">: concept to represent visual elements. You can create multiple components that can then be reused in other projects as well as being combined to make larger components. Each component is entirely self-contained, with all the HTML, CSS and JavaScript being defined inside the component itself.&nbsp;</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Package Managers</span></strong><span class= "romans3">: allow developers to download modules from a central repository. They make it easy to install, upgrade and remove any packages that are used in a project and can also help with dependency management..</span></li>
+    </ul>
+</div>
+<p class= "calibri4"><strong><span class= "romans">Package</span></strong><span class= "romans">: is a directory with one or more files of code, as well as a package.json file that contains information about the code in the package.</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">npm</span></strong><span class= "romans4">: Node Package Manager was developed soon after Node.js was introduced to allow JavaScript code to be shared by developers. It has since grown into <u>the largest repository of code libraries</u> available. It allows you to install JavaScript packages onto your machine. Some packages rely on other packages, so npm acts as a dependency manager (if you use npm to install a package, it will also install all the packages that the original package depends on as well). The npm repository is huge &ndash; it contains almost <u>half a million different packages</u>.</span></li>
+    </ul>
+</div>
+<p class= "calibri4"><strong><span class= "romans">Searching for Packages</span></strong><span class= "romans">: use the search command. (example: npm search test - returns a list of packages) You can also search for a package on the npm website (https://www.npmjs.com/).</span></p>
+<p class= "calibri4"><strong><span class= "romans">npm init command</span></strong><span class= "romans">: &nbsp;used when you start a project. It walks you through creating a package.json file.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Installing Packages Locally</span></strong><span class= "romans">: the install command is used. Adding the --save flag will ensure the package.json file is updated with the relevant information about the package.</span></p>
+<p class= "calibri4"><strong><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Example</span></strong><span class= "romans">: npm install --save lodash</span></p>
+<p class= "calibri4"><strong><span class= "romans">devDependency</span></strong><span class= "romans">: packages that aren&apos;t required by the application itself but are used in development to complete tasks to do with the application (example: running tests or transpiling the code). Any packages installed as a devDependency will not be packaged in the final build of an application that is deployed.</span></p>
+<p class= "calibri5"><strong><span class= "romans">Example</span></strong><span class= "romans">: npm install --save-dev jest</span></p>
+<p class= "calibri4"><strong><span class= "romans">Installing a specific version</span></strong><span class= "romans">: place the @ symbol after the package name, followed by the version you require. (It is usually best to just install the latest version of a package, although there may be times when you need to install a specific version of a package so it&rsquo;s compatible with other packages.)</span></p>
+<p class= "calibri4"><strong><span class= "romans">Semantic Versioning</span></strong><span class= "romans">: the first number refers to the major version number, the second is the minor version number, and the third number is for patches.</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>Example</strong>: npm install --save-dev&nbsp;</span><a href="mailto:jest@18.1.0"><span class= "romans">jest@18.1.0</span></a></p>
+<p class= "calibri4"><strong><span class= "romans">The package.json File</span></strong><span class= "romans">: create a package.json file inside a directory by running the <strong><u>npm init</u></strong> command. It manages any packages that are installed locally. It keeps track on which packages are installed, and what dependencies they rely on. It also allows you to specify specific versions of packages to use. They require: #1 &ldquo;name&rdquo; (all in lowercase and containing no spaces) #2 &ldquo;version&rdquo; (uses semantic versioning of the form major.minor.patch)</span></p>
+<p class= "calibri4"><strong><span class= "romans">By-passing the questions on install of a package.json File</span></strong><span class= "romans">: use the --yes or -y flag</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>Example</strong>: npm install &ndash;yes</span></p>
+<p class= "calibri4"><strong><span class= "romans">Setting defaults</span></strong><span class= "romans">: use npm set command:</span></p>
+<p class= "calibri4"><strong><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Example</span></strong><span class= "romans">: npm set init.author.email &quot;daz@sitepoint.com&quot;</span></p>
+<p class= "calibri10"><span class= "romans">&nbsp; &nbsp; &nbsp;npm set init.author.name &quot;DAZ&quot;</span></p>
+<p class= "calibri11"><span class= "romans">&nbsp; &nbsp; &nbsp; npm set init.license &quot;MIT&quot;</span></p>
+<p class= "calibri4"><strong><span class= "romans">README</span></strong><span class= "romans">: Most projects will have a file in the root directory called &apos;README&apos;. This files serves as the application&apos;s documentation and contains information about it. If you leave the description field blank, then npm will use the first line of the README file as the description.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Installing all the packages that are required to run the application</span></strong><span class= "romans">: the package.json file is that it contains all the information about a project&apos;s dependencies. So, from inside the root directory of the project simply entering the <strong><u>npm install</u></strong> command will download and install all the necessary packages, as well as any dependencies.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Installing Globally</span></strong><span class= "romans">: There are some cases, when it makes sense to install a package globally. This is usually when the package is to be used on a system-wide basis, rather than just for a specific project. Then they&rsquo;re available system-wide from any directory on your machine. (it isn&apos;t usually recommended, as the package files are not saved with the project [they are installed in the system folders on your machine] and there will be no reference to the package as a dependency in the package.json file.)To install a package globally, the <strong><u>global</u></strong> flag needs to be added to the<strong><u>&nbsp;install</u></strong> command (example: npm install --global lodash)</span></p>
+<p class= "calibri4"><strong><span class= "romans">Installing Globally &amp; Locally</span></strong><span class= "romans">: You might want it available on your system so you can have quick access to the library when you&rsquo;re experimenting with code in the Node REPL, but you might also want it as a specific dependency in a web application you build. There is nothing wrong with this, it just means the files exist in two (or more) different places on your machine.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Permissions</span></strong><span class= "romans">:</span> <span class= "romans">You need to be careful about permissions when installing packages globally.</span> <span class= "romans">When you install globally you are sometimes required to install the package into a system directory that you don&apos;t have permission to access.</span> <span class= "romans">Three ways to fix this problem are explained on the npm website.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Listing Installed Packages</span></strong><span class= "romans">: You can list all the packages that have been installed locally using the list command. (example: npm list)</span> <span class= "romans">If you only want to see the packages that you have installed directly, you can use the depth flag, with a value of 0. (example: npm list --depth=0) You can find out which packages have been installed globally by adding the --global or -g flag. (example: npm list &ndash;global)&nbsp;</span></p>
+<p class= "calibri4"><strong><span class= "romans">Updating A Package</span></strong><span class= "romans">: You can find out if any of the packages you have installed have been updated by running the command <strong><u>outdated</u></strong>. (examples: #1 locally - npm outdated #2 globally - npm outdated -g)</span> <span class= "romans">This will display a list of any packages that are listed in package.json and have a more recent version available than what&rsquo;s currently installed.</span> <span class= "romans">npm makes it easy to update a package to the latest version using the <strong><u>update</u></strong> command. (examples: #1 jest package - npm update jest #2 all packages - npm update #3 globally - npm update --global)&nbsp;</span></p>
+<p class= "calibri4"><strong><span class= "romans">Uninstalling Packages</span></strong><span class= "romans">: You can use npm to uninstall a package using the <strong><u>uninstall&nbsp;</u></strong>command (example: npm uninstall lodash)</span> <span class= "romans">To remove it from the dependencies in package.json, you will need to use the <strong><u>save</u></strong> flag (example: npm uninstall --save lodash)</span> <span class= "romans">If it was installed as a devDependency, you will need to add the<strong><u>&nbsp;--save-dev</u></strong> flag to remove it from the package.json file (example: npm uninstall --save-dev jest)</span> <span class= "romans">Global packages can be uninstalled by adding the<strong><u>&nbsp;--global&nbsp;</u></strong>or <strong><u>-g</u></strong> to the <strong><u>uninstall</u></strong> command (example: npm uninstall --global lodash)</span></p>
+<p class= "calibri4"><strong><span class= "romans">npm Command Aliases</span></strong><span class= "romans">: #1 install = i #2 uninstall = un #3 update = up #4 list = ls</span></p>
+<ul class= "under">
+    <li><strong><span class= "f-size">Yarn</span></strong><span class= "romans3">: it has emerged recently as a popular alternative to npm.</span> <span class= "romans3">Yarn generally installs packages much faster than npm due to the fact that it caches packages. It has a slightly different set of commands, but generally works in the same way as npm.</span></li>
+    <li><strong><span class= "f-size">Content delivery networks (CDNs)</span></strong><span class= "romans3">: systems of distributed servers that can deliver web resources, such as JavaScript, CSS or image files to a user based on their geographic location.</span> <span class= "romans3">It will be cached, and can then be used again by other sites without the need for another network request. (unpkg is a global content delivery network or CDN)</span></li>
+    <li><strong><span class= "f-size">Deploying JavaScript</span></strong><span class= "romans3">: combine all the scripts into a single minified and compressed file.</span> <span class= "romans3">This file is often named &apos;bundle.min.js&apos; to signify that it&rsquo;s a number of files bundled together and has also been minified.</span> <span class= "romans4">The optimal position for the &lt;script&gt; tag is right at the end of the page, just before the closing &lt;body&gt; tag.</span></li>
+    <li><strong><span class= "f-size">Transpiling Code</span></strong><span class= "romans3">: A code transpiler allows you to write your code in the latest version of ECMAScript, using all the latest features, then convert it into an older variant of JavaScript that is compatible with most browsers.</span> T<span class= "romans3">he most popular transpiler</span> <span class= "romans3">for converting the most up-to-date version of ECMAScript into an older flavor of JavaScript.: #1 Babel. Transpilers that allow you to write in a different language like (#1 CoffeeScript #2 TypeScript #3 Dart) then compile it into JavaScript.</span></li>
+    <li><strong><span class= "f-size">Minification</span></strong><span class= "romans3">: the process of removing any unnecessary characters from your code to reduce the file size. This includes all comments, whitespace, and other characters that are superfluous. They can also change variable and function names to single letters (called obfuscation &amp; employ optimizations to make the code run faster. This can have a major effect on the overall size of your files, making them download and run faster. Popular minifier tools: #1 YUI Compressor #2 Google&rsquo;s Closure #3 UglifyJS</span></li>
+</ul>
+<p class= "calibri4"><strong><span class= "romans">Good practice</span></strong><span class= "romans">: use well-commented and descriptive code in development and minified code in production.</span></p>
+<ul class= "under">
+    <li class="arrow-ind"><strong><span class= "f-size">File-compression tool</span></strong><span class= "romans3">: compress files for the server,</span> <span class= "f-size">making them much quicker to download. (example: gzip)</span></li>
+    <li class="arrow-ind"><strong><span class= "f-size">Folder Structure</span></strong><span class= "romans3">: You can organize your files in any way you like, but there are some conventions that are often used for directory names.</span></li>
+</ul>
+<p class= "calibri4"><strong><span class= "romans">Root Files</span></strong><span class= "romans">: index.html</span> <span class= "romans">is traditionally the page that a web browser will load by default. For small projects</span> <span class= "romans">it is usually okay to put all the JavaScript into a single file in the root directory. The file is usually called #1 &lsquo;main.js&rsquo; #2 &apos;index.js&apos; #3 &apos;app.js&apos; #4 something similar.</span> <span class= "romans">As a project gets bigger,</span> <span class= "romans">you might want to move all of your JavaScript into a separate folder, called #1 &apos;js&apos; #2 &apos;scripts&apos; #3 something similar. In a similar way, it is customary to have a single CSS file in the root directory or keep multiple CSS files saved in a folder called #1 &apos;CSS&apos; #2 &apos;stylesheets&apos; #3 something similar.</span></p>
+<p class= "calibri4"><strong><span class= "romans">src folder</span></strong><span class= "romans">: Code that needs to be transpiled is often placed inside a folder called src (short for &apos;source&apos;). The transpiler can then compile the JavaScript code into a single file in a different location (usually this is either the root directory or the &apos;dist&apos; folder).</span></p>
+<p class= "calibri4"><strong><span class= "romans">dist folder</span></strong><span class= "romans">: The output of any transpiled code from the src folder is usually placed inside a folder called &apos;dist&apos; (short for &apos;distribution&apos;).</span> <span class= "romans">Even though there might be many different files inside the src folder, the result of transpilation means there is usually only a single JavaScript file inside the &apos;dist&apos; folder, usually called budle.js or &apos;bundle.min.js&apos; if it has also been minified.</span></p>
+<p class= "calibri4"><strong><span class= "romans">lib folder</span></strong><span class= "romans">: Any modules are usually stored in a folder called lib (short for &apos;library&apos;) that is usually placed inside the src folder. Third-party libraries are often placed inside a folder called vendor, although they are sometimes also placed inside the lib folder.</span></p>
+<p class= "calibri4"><strong><span class= "romans">node_modules</span></strong><span class= "romans">: Any third-party code installed using npm will be installed into this directory/folder.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Modules</span></strong><span class= "romans">: For only a small number of modules, you can just keep them all in the root of the <strong><u>lib</u></strong> directory, but as the size of your application grows, you might need to start thinking about how to organize the modules into separate folders.</span></p>
+<p class= "calibri4"><strong><span class= "romans">Organization By Type</span></strong><span class= "romans">: has folders for the different types of file that will be used in your project such as Javascript, CSS, Images and Tests.</span></p>
+<p class= "calibri4"><strong><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Example</span></strong><span class= "romans">:</span></p>
+<ul class= "disc">
+    <li><strong><span class= "f-size">&nbsp; &nbsp; &nbsp;&nbsp;src</span></strong>
+        <ul class= "disc2">
+            <li><strong><span class= "f-size">CSS</span></strong></li>
+            <li><strong><span class= "f-size">JS</span></strong></li>
+            <li><strong><span class= "f-size">views</span></strong></li>
+            <li><strong><span class= "f-size">tests</span></strong></li>
+        </ul>
+    </li>
+    <li><strong><span class= "f-size">dist</span></strong>
+        <ul class= "disc2">
+            <li><strong><span class= "f-size">index.html</span></strong></li>
+            <li><strong><span class= "f-size">bundle.min.js</span></strong></li>
+        </ul>
+    </li>
+    <li><strong><span class= "f-size">package.json</span></strong></li>
+    <li><strong><span class= "f-size">node_modules</span></strong></li>
+    <li><strong><span class= "f-size">README</span></strong></li>
+</ul>
+<p class= "calibri4"><strong><span class= "romans">Modular Organization</span></strong><span class= "romans">: groups files by feature, so all the files associated with a certain feature together in a single folder. Advantages: #1 keeps all the code related to that particular feature all in one place #2 modules can grow to incorporate their own file structure and sub-directories as required #3 allows developers to work on a specific feature without affecting another feature (particularly useful when working in teams) #4 modular nature of this approach makes it easy to switch one feature for another, without affecting the rest of the project #5 each module is self-contained, making them easy to test.</span></p>
+<p class= "calibri4"><strong><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Example</span></strong><span class= "romans">:&nbsp;</span></p>
+<ul class= "disc">
+    <li><strong><span class= "f-size">&nbsp; &nbsp; &nbsp;&nbsp;src</span></strong>
+        <ul class= "disc2">
+            <li><strong><span class= "f-size">index.html</span></strong></li>
+            <li><strong><span class= "f-size">lib</span></strong>
+                <ul class= "disc2">
+                    <li><strong><span class= "f-size">app</span></strong>
+                        <ul class= "disc2">
+                            <li><strong><span class= "f-size">app.js</span></strong></li>
+                            <li><strong><span class= "f-size">app.css</span></strong></li>
+                            <li><strong><span class= "f-size">app.test.js</span></strong>
+                                <ul class= "disc2">
+                                    <li><strong><span class= "f-size">moduleA</span></strong></li>
+                                </ul>
+                            </li>
+                            <li><strong><span class= "f-size">moduleA.html</span></strong></li>
+                            <li><strong><span class= "f-size">moduleA.js</span></strong></li>
+                            <li><strong><span class= "f-size">moduleA.css</span></strong></li>
+                            <li><strong><span class= "f-size">moduleA.test.js</span></strong>
+                                <ul class= "disc2">
+                                    <li><strong><span class= "f-size">moduleB</span></strong></li>
+                                </ul>
+                            </li>
+                            <li><strong><span class= "f-size">moduleB.html</span></strong></li>
+                            <li><strong><span class= "f-size">moduleB.js</span></strong></li>
+                            <li><strong><span class= "f-size">moduleB.css</span></strong></li>
+                            <li><strong><span class= "f-size">moduleB.test.js</span></strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><strong><span class= "f-size">dist</span></strong>
+        <ul class= "disc2">
+            <li><strong><span class= "f-size">index.html</span></strong></li>
+            <li><strong><span class= "f-size">bundle.min.js</span></strong></li>
+        </ul>
+    </li>
+    <li><strong><span class= "f-size">package.json</span></strong></li>
+    <li><strong><span class= "f-size">node_modules</span></strong></li>
+    <li><strong><span class= "f-size">README</span></strong></li>
+</ul>
+<p class= "calibri4"><strong><span class= "romans">Start Small</span></strong><span class= "romans">: Start small with</span> <span class= "romans">just the root files: index.html, main.js and main.css. Then expand as the project grows.</span></p>
+<div class= "calibri">
+    <ul class= "under2">
+        <li class= "calibri arrow-ind"><strong><span class= "f-size">Webpack</span></strong><span class= "romans3">: a module bundler that takes all the JavaScript files used in your project and bundles them altogether in one file.</span></li>
+    </ul>
+</div>
+<p class= "calibri4"><strong><span class= "romans">Loaders</span></strong><span class= "romans">: a concept Webpack uses, which allows you to perform tasks such as #1 Transpiling code #2 Minifying code #3 Linting code #4 Testing code #5 Compiling CSS preprocessor files (such as Sass, Less or Stylus) into standard CSS files. #6 Compile multiple CSS and image files into a single destination folder.</span></p>
+<p class= "calibri12"><strong><span class= "romans">Webpack Example</span></strong><span class= "romans">:&nbsp;</span></p>
+<p class= "calibri4"><span class= "romans">#1 create a new folder called &ldquo;webpack-example&rdquo;, then navigate to that folder in the terminal and create a package.json file with the command (npm init -y)</span></p>
+<p class= "calibri4"><span class= "romans">#2 use npm to install Webpack</span> <span class= "romans">as part of the development process with the command (npm install --save-dev webpack)</span></p>
+<p class= "calibri4"><span class= "romans">#3 create a simple HTML file called webpack.html that includes the following code:</span></p>
+<p class= "calibri4"><span class= "romans">&lt;!doctype html&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&lt;html lang=&apos;en&apos;&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&lt;head&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &lt;meta charset=&apos;utf-8&apos;&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &nbsp;&lt;title&gt;Webpack Example&lt;/title&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&lt;/head&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&lt;body&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &lt;script src=&apos;bundle.js&apos;&gt;&lt;/script&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&lt;/body&gt;</span></p>
+<p class= "calibri4"><span class= "romans">&lt;/html&gt;</span></p>
+<p class= "calibri4"><span class= "romans">#4 create a JavaScript file called main.js that contains the following code:</span></p>
+<p class= "calibri4"><span class= "romans">import _ from &apos;lodash&apos;;</span></p>
+<p class= "calibri4"><span class= "romans">console.log(_.now());</span></p>
+<p class= "calibri4"><span class= "romans">#5 On its own, this code won&apos;t work, but we can use Webpack to sort out importing the Lodash library from the &apos;node_modules&apos; directory. To do this, we simply need to run the following command in the terminal:</span></p>
+<p class= "calibri4"><span class= "romans">./node_modules/.bin/webpack main.js bundle.js</span></p>
+<p class= "calibri4"><span class= "romans">The first argument is the file that contains our code (&apos;main.js), and the second argument is the file that we want the output to be written to (bundle.js).</span></p>
+<p class= "calibri4"><span class= "romans">#6 To make things simpler, going forward, we can create a webpack configuration file called &apos;webpack.config.js&apos;. <strong>This is actually just a standard JavaScript file and should be saved in the root of the directory</strong> and contain the following code:</span></p>
+<p class= "calibri4"><span class= "romans">module.exports = {</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; entry: &apos;./main.js&apos;,</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; output: {</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;filename: &apos;bundle.js&apos;,</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &nbsp; &nbsp; path: __dirname</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; }</span></p>
+<p class= "calibri4"><span class= "romans">};</span></p>
+<p class= "calibri4"><span class= "romans">#7 This can be run using the following line of code in the terminal:</span></p>
+<p class= "calibri4"><span class= "romans">./node_modules/.bin/webpack</span></p>
+<p class= "calibri4"><span class= "romans">#8 use npm to simplify this process by updating the &quot;scripts&quot; property in your package.json file to the following:</span></p>
+<p class= "calibri4"><span class= "romans">&quot;scripts&quot;: {</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &nbsp;&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp; &nbsp; &nbsp;&quot;build&quot;: &quot;webpack&quot;</span></p>
+<p class= "calibri4"><span class= "romans">}</span></p>
+<p class= "calibri4"><span class= "romans">#8 Now you can run Webpack using the following command:</span></p>
+<p class= "calibri4"><span class= "romans">npm run build</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp;</span></p>
+<p class= "calibri4"><span class= "romans">&nbsp;</span></p>
+</body>
+</html>

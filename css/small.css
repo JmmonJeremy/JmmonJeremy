@@ -93,6 +93,20 @@ ul {
     text-decoration: none;    
 }
 
+#body_list a.numbersL {
+    padding-left: 12px;
+    /* padding-right: .1rem; */
+    /* margin-right: -10px; */
+}
+
+#body_list a.numbersR {  
+    padding-left: 16px;
+}
+
+#body_list a.numbersM {  
+    padding-left: 17px;
+}
+
 #body_list li{ 
     line-height: 30px;   
     max-width: 860px;
