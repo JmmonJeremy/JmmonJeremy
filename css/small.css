@@ -1,6 +1,6 @@
 /* set a max width for the content and the backgroung color for the screen */
 body {
-    max-width: 960px;
+    max-width: 1300px;
     margin: 0 auto;
     background-color: rgb(255, 249, 196);
 }
@@ -13,6 +13,7 @@ header {
 }
 /* put portrait in the right spot and a shadow border effect on the picture */
 img {    
+    margin-left: 20px;
     margin-top: 13px;      
     box-sizing: border-box; 
     width: 80%;    
@@ -21,14 +22,17 @@ img {
 h1 {
     font-family: "Londrina Solid", "Verdana", cursive;
     font-size: 1.5em;
-    color: #85FFF3;
-    margin: 0;     
+    color: rgb(85, 81, 81);
+    margin: 0;
+    text-shadow: 1px 1px 20px white, -1px -1px 10px white;     
 }
 /* set the heading colors, size & font family */
 h2 {
     font-family: 'Gideon Roman', Trebuchet MS, cursive;
     font-size: 1em;
-    color: #1976D2;      
+    color: rgb(172, 64, 64); 
+    text-align: center; 
+    text-shadow: 1px 1px 10px white, -1px -1px 10px white;   
 }
 /* set the background color and grid layout for the body of the content*/
 main {
@@ -47,17 +51,66 @@ main {
     width: 90%;   
     border-bottom: 1px solid black;    
 }
+
+#labels{ 
+    line-height: 2;
+    max-width: 355px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Gideon Roman', Trebuchet MS, cursive;
+    font-size: 1.25em;
+    color: rgb(172, 64, 64); 
+    font-weight: 900;  
+}
+
+#link-label {
+  text-decoration: underline wavy;
+  text-underline-offset: 3px;
+}
+
+#title-label {
+  padding-left: 1.3em;
+  text-decoration: underline wavy;
+  text-underline-offset: 3px;  
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+ }
 /* put list in the right spot */
-#body_list {     
-    font-family: "Gideon Roman", "Trebuchet MS", cursive;
-    color: #1565C0;
+#body_list a { 
+    white-space:nowrap;    
+    text-shadow: 1px 1px 10px yellow, -1px -1px 10px yellow;   
+    font-weight: 900; 
+    font-size: 1.5rem;    
+    font-family: "Chewy", "Verdana", cursive;
+    color: green;
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+
+#body_list li{ 
+    line-height: 30px;   
+    max-width: 860px;
+    font-weight: 900; 
+    font-size: 1.25rem; 
+    font-family: "Montserrat Alternates", "Verdana", cursive;    
+    color: green;
     box-sizing: border-box;    
 }
+
+#bottom-line {
+    max-width: 880px;
+    border-top: 2px dashed rgb(172, 64, 64); 
+    margin-bottom: 1em;
+}
 /* change color and settings when you hover over links */
-a:hover {
-    background-color: #95B2B0;
-    color: #020664;
-    text-decoration: none;
+#body_list a:hover {   
+    color: #020664;   
 }
 /* change the color of the hyperlink (color was #A1887F) */
 a {
@@ -68,20 +121,22 @@ a {
     color: #B71C1C;
 }
 footer a {
-    color: #85FFF3;
+    color: white;
 }
 footer {      
     background-color: #634803;
     text-align: center;        
     padding: 5px 0;  
 }
-#footer_info {     
-    color: #85FFF3;
+#footer_info {  
+    /* rgb(85, 81, 81);    */
+    color: white; 
+    text-shadow: 1px 1px 10px red, -1px -1px 10px #B71C1C; 
     margin: 10px 0 10px 0;
 }
 #footer_update {     
     font-size: .83em;
-    color: white;
+    color: white;  
     margin-top: 0;    
 }
 

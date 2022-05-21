@@ -1,3 +1,4 @@
+/* 32.5em = 520px with 16px base */
 @media only screen and (min-width: 32.5em) {
     h1 {     
         font-size: 2.em;            

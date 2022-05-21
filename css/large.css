@@ -1,3 +1,4 @@
+/* 69em = 1104px with 16px base */
 @media only screen and (min-width: 69em) {
     h1 {     
         font-size: 3.5em;          
@@ -5,5 +6,12 @@
     /* set the heading colors, size & font family */
     h2 {      
         font-size: 2em;     
-    }   
+    }
+    #labels{
+        max-width: 855px;
+        font-size: 1.25em;
+    }
+    #body_list a {        
+        float: right; 
+    }
 }
