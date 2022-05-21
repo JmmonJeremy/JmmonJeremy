@@ -1,0 +1,154 @@
+/* THIS IS FROM THE ASPOSE WORD TO HTML WEBSITE */
+body {
+  line-height: 108%;
+  font-family: Calibri;
+  font-size: 11pt;
+}
+p {
+  margin: 0pt 0pt 8pt;
+}
+li {
+  margin-top: 0pt;
+  margin-bottom: 8pt;
+}
+.ListParagraph {
+  /* margin-top: -8pt; */
+  margin-left: 36pt;
+  margin-bottom: 8pt;
+  line-height: 108%;
+  font-size: 12pt; 
+  text-indent: -1.7em;
+}
+span.Hyperlink {
+  text-decoration: underline;
+  color: #0000ff;
+}
+.p4 {
+  line-height: 108%;
+  font-size: 12pt;
+}
+.span13 {
+  font-family: "Times New Roman";
+}
+.inbl1 {
+  width: 30.69pt;
+  display: inline-block;
+}
+.sp-inbl7 {
+  width: 36pt;
+  display: inline-block;
+}
+.w15inbl1 {
+  width: 15.69pt;
+  display: inline-block;
+}
+.lh108-p1 {
+  text-align: center;
+  line-height: 108%;
+  font-size: 20pt;
+}
+.rom-bld24 {
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+.lh108-p2 {
+  text-align: center;
+  line-height: 108%;
+  font-size: 13.5pt;
+}
+.sp-treb1 {
+  font-family: "Trebuchet MS";
+  color: #3e3e3e;
+  background-color: #ffffff;
+}
+.txtdec2 {
+  text-decoration: none;
+}
+.sp-treb2 {
+  font-family: "Trebuchet MS";
+  text-decoration: underline;
+  color: #0000ff;
+  background-color: #ffffff;
+}
+.rom108bld1 {
+  line-height: 108%;
+  font-family: "Times New Roman";
+  font-size: 12pt;
+  font-weight: bold;
+}
+.bkmk1-23 {
+  -aw-bookmark-end: _Hlk101792923;
+}
+.bkmk1-18 {
+  -aw-bookmark-end: _Hlk103187618;
+}
+.ListParagraph .marg-aw11 {
+  margin-bottom: 0pt;
+  text-indent: -18pt;
+  line-height: 108%;
+  font-size: 12pt;
+  -aw-import: list-item;
+  -aw-list-level-number: 0;
+  -aw-list-number-format: "-";
+  -aw-list-number-styles: "bullet";
+  -aw-list-padding-sml: 14pt;
+}
+.bkmk1-69 {
+  -aw-bookmark-end: _Hlk102776269;
+}
+.sp-ign17 {
+  -aw-import: ignore;
+}
+.rom-inl16 {
+  width: 14pt;
+  font: 7pt "Times New Roman";
+  display: inline-block;
+  -aw-import: spaces;
+}
+.lh108-sp8 {
+  line-height: 108%;
+  font-size: 11pt;
+}
+.ListParagraph .txt-ind3 {
+  margin-bottom: 0pt;
+  text-indent: -18pt;
+  -aw-import: list-item;
+  -aw-list-level-number: 0;
+  -aw-list-number-format: "-";
+  -aw-list-number-styles: "bullet";
+  -aw-list-padding-sml: 14pt;
+}
+.rom12bld4 {
+  font-family: "Times New Roman";
+  font-size: 12pt;
+  font-weight: bold;
+}
+.fs7va-super {
+  line-height: 108%;
+  font-size: 7.33pt;
+  vertical-align: super;
+}
+.fwbld5 {
+  font-weight: bold;
+}
+.ListParagraph .taw1 {
+  text-indent: -18pt;
+  -aw-import: list-item;
+  -aw-list-level-number: 0;
+  -aw-list-number-format: "-";
+  -aw-list-number-styles: "bullet";
+  -aw-list-padding-sml: 14pt;
+}
+.ListParagraph .tlfa1 {
+  text-indent: -18pt;
+  line-height: 108%;
+  font-size: 12pt;
+  -aw-import: list-item;
+  -aw-list-level-number: 0;
+  -aw-list-number-format: "-";
+  -aw-list-number-styles: "bullet";
+  -aw-list-padding-sml: 14pt;
+}
+.tac1 {
+  text-align: center
+}

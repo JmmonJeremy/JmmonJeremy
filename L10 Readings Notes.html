@@ -1,0 +1,608 @@
+<div>
+  <p style="line-height: 108%; font-size: 12pt">
+    <span style="font-family: 'Times New Roman'">Jeremy Troy Suchanski</span
+    ><span style="width: 30.69pt; display: inline-block">&#xa0;</span
+    ><span style="width: 36pt; display: inline-block">&#xa0;</span
+    ><span style="width: 36pt; display: inline-block">&#xa0;</span>
+  </p>
+  <p style="line-height: 108%; font-size: 12pt">
+    <span style="font-family: 'Times New Roman'"
+      >Web Frontend Development II</span
+    >
+  </p>
+  <p style="line-height: 108%; font-size: 12pt">
+    <span style="font-family: 'Times New Roman'">Gary James</span
+    ><span style="width: 15.69pt; display: inline-block">&#xa0;</span
+    ><span style="width: 36pt; display: inline-block">&#xa0;</span
+    ><span style="width: 36pt; display: inline-block">&#xa0;</span
+    ><span style="width: 36pt; display: inline-block">&#xa0;</span
+    ><span style="width: 36pt; display: inline-block">&#xa0;</span
+    ><span style="width: 36pt; display: inline-block">&#xa0;</span>
+  </p>
+  <p style="line-height: 108%; font-size: 12pt">
+    <span style="font-family: 'Times New Roman'">May 16, 2022</span>
+  </p>
+  <p style="text-align: center; line-height: 108%; font-size: 20pt">
+    <span style="font-family: 'Times New Roman'; font-weight: bold"
+      >L10 Readings Notes</span
+    >
+  </p>
+  <p style="text-align: center; line-height: 108%; font-size: 13.5pt">
+    <a name="_Hlk101792923"></a><a name="_Hlk103187618"></a
+    ><a name="_Hlk102776269"
+      ><span
+        style="
+          font-family: 'Trebuchet MS';
+          color: #3e3e3e;
+          background-color: #ffffff;
+        "
+        >&#xa0;</span
+      ></a
+    ><a
+      href="https://www.youtube.com/watch?v=exrc_rLj5iw"
+      target="_blank"
+      style="text-decoration: none"
+      ><span
+        style="
+          font-family: 'Trebuchet MS';
+          text-decoration: underline;
+          color: #0000ff;
+          background-color: #ffffff;
+        "
+        >An Introduction to Functions, Execution Context and the Call
+        Stack</span
+      ></a
+    ><span
+      style="
+        line-height: 108%;
+        font-family: 'Times New Roman';
+        font-size: 12pt;
+        font-weight: bold;
+      "
+    >
+      (Notes)</span
+    ><span style="-aw-bookmark-end: _Hlk101792923"></span
+    ><span style="-aw-bookmark-end: _Hlk103187618"></span>
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-bookmark-end: _Hlk102776269"></span
+    ><span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >JavaScript Execution</span
+    ><span style="font-family: 'Times New Roman'"
+      >: One thing at a time: single threaded execution – line by line in order:
+      synchronous. Does 2 main things #1 stores things in memory #2 executes the
+      code.</span
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Execution context</span
+    ><span style="font-family: 'Times New Roman'">:</span
+    ><span style="line-height: 108%; font-size: 11pt">
+      A space in which to execute our code (memory &amp; execution thread)</span
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Global execution context</span
+    ><span style="font-family: 'Times New Roman'"
+      >: the whole application code.</span
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Global variable environment</span
+    ><span style="font-family: 'Times New Roman'">:</span
+    ><span style="line-height: 108%; font-size: 11pt"> global memory.</span>
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Functions</span
+    ><span style="font-family: 'Times New Roman'">:</span
+    ><span style="line-height: 108%; font-size: 11pt">
+      a way of wrapping up some instructions or code to be done later on with a
+      label. When run they have a #1 local execution context and a #2 local
+      memory (variable environment). Then it returns a value to the global
+      execution context’s memory.</span
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Variables equal to a function:</span
+    ><span style="line-height: 108%; font-size: 11pt">
+      default to undefined at first, until code is executed.</span
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Parameter</span
+    ><span style="font-family: 'Times New Roman'"
+      >: a placeholder to allow different values to be run in the code.</span
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span
+        style="
+          font-family: 'Times New Roman';
+          font-size: 12pt;
+          font-weight: bold;
+        "
+        >-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-weight: bold">Argument</span
+    ><span>: the actual value that gets put into a function’s parameter.</span>
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span
+        style="
+          font-family: 'Times New Roman';
+          font-size: 12pt;
+          font-weight: bold;
+        "
+        >-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-weight: bold">JavaScript call stack</span
+    ><span
+      >: A stack of calls to functions - where it is, where it was, where it is
+      going to next. Global context is always 1</span
+    ><span style="line-height: 108%; font-size: 7.33pt; vertical-align: super"
+      >st</span
+    ><span> and on the bottom.</span>
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span
+        style="
+          font-family: 'Times New Roman';
+          font-size: 12pt;
+          font-weight: bold;
+        "
+        >-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-weight: bold">Push</span
+    ><span>: something added to the call stack.</span>
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      text-indent: -18pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span
+        style="
+          font-family: 'Times New Roman';
+          font-size: 12pt;
+          font-weight: bold;
+        "
+        >-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-weight: bold">Pop</span
+    ><span>: remove the top item from the stack.</span>
+  </p>
+  <p style="text-align: center; line-height: 108%; font-size: 13.5pt">
+    <a
+      href="https://www.youtube.com/watch?v=viQz4nUUnpw"
+      target="_blank"
+      style="text-decoration: none"
+      ><span
+        style="
+          font-family: 'Trebuchet MS';
+          text-decoration: underline;
+          color: #0000ff;
+          background-color: #ffffff;
+        "
+        >How to Understand Callbacks &amp; Higher Order Functions</span
+      ></a
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'"
+        ><span style="font-weight: bold">-</span></span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Generic function</span
+    ><span style="font-family: 'Times New Roman'"
+      >: making functions generic makes them reusable and useful. This is the
+      essence of why we have higher order functions.
+    </span>
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Higher Order Functions</span
+    ><span style="font-family: 'Times New Roman'"
+      >: (map, filter, reduce) There is not only some data we don’t want to
+      determine ahead of time, but also some functionality. It is any function
+      that takes in a “baby” function or returns out a function. They keep our
+      code DRY and let us run asynchronous code.</span
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold">DRY</span
+    ><span style="line-height: 108%; font-size: 11pt"
+      >: Don’t repeat yourself.</span
+    >
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      margin-bottom: 0pt;
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Callback</span
+    ><span style="line-height: 108%; font-size: 11pt"
+      >: is the function passed into a function, passing in some functionality
+      through a function to a function through a parameter.
+    </span>
+  </p>
+  <p
+    class="ListParagraph"
+    style="
+      text-indent: -18pt;
+      line-height: 108%;
+      font-size: 12pt;
+      -aw-import: list-item;
+      -aw-list-level-number: 0;
+      -aw-list-number-format: '-';
+      -aw-list-number-styles: 'bullet';
+      -aw-list-padding-sml: 14pt;
+    "
+  >
+    <span style="-aw-import: ignore"
+      ><span style="font-family: 'Times New Roman'; font-weight: bold">-</span
+      ><span
+        style="
+          width: 14pt;
+          font: 7pt 'Times New Roman';
+          display: inline-block;
+          -aw-import: spaces;
+        "
+        >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+      </span></span
+    ><span style="font-family: 'Times New Roman'; font-weight: bold"
+      >Functions</span
+    ><span style="line-height: 108%; font-size: 11pt">: are 1</span
+    ><span style="line-height: 108%; font-size: 7.33pt; vertical-align: super"
+      >st</span
+    ><span style="line-height: 108%; font-size: 11pt">
+      class objects meaning that they get treated like any other object in
+      JavaScript #1 assigned to variables and properties of other objects #2
+      passed as arguments into functions. #3 returned as values from functions.
+      They have one property that objects don’t have – they can be
+      invoked/called/run.</span
+    >
+  </p>
+  <p style="text-align: center">
+    <span style="-aw-import: ignore">&#xa0;</span>
+  </p>
+</div>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="L10 Readings notes for Jeremy T. Suchanski in WDD 330:
+    Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>WDD330 L10 Readings Notes</title>
+    <link rel="stylesheet" href="../css/note.css" />
+  </head>
+  <body>
+    <div>
+      <p class="p4">
+        <span class="span13">Jeremy Troy Suchanski</span
+        ><span class="inbl1">&#xa0;</span><span class="sp-inbl7">&#xa0;</span
+        ><span class="sp-inbl7">&#xa0;</span>
+      </p>
+      <p class="p4"><span class="span13">Web Frontend Development II</span></p>
+      <p class="p4">
+        <span class="span13">Gary James</span
+        ><span class="w15inbl1">&#xa0;</span
+        ><span class="sp-inbl7">&#xa0;</span
+        ><span class="sp-inbl7">&#xa0;</span
+        ><span class="sp-inbl7">&#xa0;</span
+        ><span class="sp-inbl7">&#xa0;</span
+        ><span class="sp-inbl7">&#xa0;</span>
+      </p>
+      <p class="p4"><span class="span13">May 16, 2022</span></p>
+      <p class="lh108-p1">
+        <span class="rom-bld24"
+          >L10 Readings Notes</span
+        >
+      </p>
+      <p class="lh108-p2">
+        <a name="_Hlk101792923"></a><a name="_Hlk103187618"></a
+        ><a name="_Hlk102776269"
+          ><span
+            class="sp-treb1"
+            >&#xa0;</span
+          ></a
+        ><a
+          href="https://www.youtube.com/watch?v=exrc_rLj5iw"
+          target="_blank"
+          class="txtdec2"
+          ><span
+            class="sp-treb2"
+            >An Introduction to Functions, Execution Context and the Call
+            Stack</span
+          ></a
+        ><span
+          class="rom108bld1"
+        >
+          (Notes)</span
+        ><span class="bkmk1-23"</span
+        ><span class="bkmk1-18"></span>
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="bkmk1-69"></span
+        ><span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >JavaScript Execution</span
+        ><span class="span13"
+          >: One thing at a time: single threaded execution – line by line in
+          order: synchronous. Does 2 main things #1 stores things in memory #2
+          executes the code.</span
+        >
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Execution context</span
+        ><span class="span13">:</span
+        ><span class="lh108-sp8">
+          A space in which to execute our code (memory &amp; execution
+          thread)</span
+        >
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Global execution context</span
+        ><span class="span13">: the whole application code.</span>
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Global variable environment</span
+        ><span class="span13">:</span
+        ><span class="lh108-sp8"> global memory.</span>
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Functions</span
+        ><span class="span13">:</span
+        ><span class="lh108-sp8">
+          a way of wrapping up some instructions or code to be done later on
+          with a label. When run they have a #1 local execution context and a #2
+          local memory (variable environment). Then it returns a value to the
+          global execution context’s memory.</span
+        >
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Variables equal to a function:</span
+        ><span class="lh108-sp8">
+          default to undefined at first, until code is executed.</span
+        >
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Parameter</span
+        ><span class="span13"
+          >: a placeholder to allow different values to be run in the
+          code.</span
+        >
+      </p>
+      <p
+        class="ListParagraph txt-ind3"
+      >
+        <span class="sp-ign17"
+          ><span
+          class="rom12bld4"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="fwbld5">Argument</span
+        ><span
+          >: the actual value that gets put into a function’s parameter.</span
+        >
+      </p>
+      <p
+        class="ListParagraph txt-ind3"
+      >
+        <span class="sp-ign17"
+          ><span
+          class="rom12bld4"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="fwbld5">JavaScript call stack</span
+        ><span
+          >: A stack of calls to functions - where it is, where it was, where it
+          is going to next. Global context is always 1</span
+        ><span
+          class="fs7va-super"
+          >st</span
+        ><span> and on the bottom.</span>
+      </p>
+      <p
+        class="ListParagraph txt-ind3"
+      >
+        <span class="sp-ign17"
+          ><span
+          class="rom12bld4"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="fwbld5">Push</span
+        ><span>: something added to the call stack.</span>
+      </p>
+      <p
+        class="ListParagraph taw1"
+      >
+        <span class="sp-ign17"
+          ><span
+          class="rom12bld4"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="fwbld5">Pop</span
+        ><span>: remove the top item from the stack.</span>
+      </p>
+      <p class="lh108-p2">
+        <a
+          href="https://www.youtube.com/watch?v=viQz4nUUnpw"
+          target="_blank"
+          class="txtdec2"
+          ><span
+            class="sp-treb2"
+            >How to Understand Callbacks &amp; Higher Order Functions</span
+          ></a
+        >
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="sp-ign17"
+          ><span class="span13"><span class="fwbld5">-</span></span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Generic function</span
+        ><span class="span13"
+          >: making functions generic makes them reusable and useful. This is
+          the essence of why we have higher order functions.
+        </span>
+      </p>
+      <p
+        class="ListParagraph marg11"
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Higher Order Functions</span
+        ><span class="span13"
+          >: (map, filter, reduce) There is not only some data we don’t want to
+          determine ahead of time, but also some functionality. It is any
+          function that takes in a “baby” function or returns out a function.
+          They keep our code DRY and let us run asynchronous code.</span
+        >
+      </p>
+      <p
+        class="ListParagraph marg11
+        "
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >DRY</span
+        ><span class="lh108-sp8"
+          >: Don’t repeat yourself.</span
+        >
+      </p>
+      <p
+        class="ListParagraph marg11
+        "
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Callback</span
+        ><span class="lh108-sp8"
+          >: is the function passed into a function, passing in some
+          functionality through a function to a function through a parameter.
+        </span>
+      </p>
+      <p
+        class="ListParagraph tlfa1"
+      >
+        <span class="sp-ign17"
+          ><span class="rom-bld24"
+            >-</span
+          ><span
+          class="rom-inl16"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+          </span></span
+        ><span class="rom-bld24"
+          >Functions</span
+        ><span class="lh108-sp8">: are 1</span
+        ><span
+          class="fs7va-super"
+          >st</span
+        ><span class="lh108-sp8">
+          class objects meaning that they get treated like any other object in
+          JavaScript #1 assigned to variables and properties of other objects #2
+          passed as arguments into functions. #3 returned as values from
+          functions. They have one property that objects don’t have – they can
+          be invoked/called/run.</span
+        >
+      </p>
+      <p class="tac1">
+        <span class="sp-ign17">&#xa0;</span>
+      </p>
+    </div>
+  </body>
+</html>
