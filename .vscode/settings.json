@@ -1,0 +1,31 @@
+{
+    "workbench.colorCustomizations": {
+
+        "editorOverviewRuler.border": "#75b071"
+        "scrollbar.shadow": "#76c3d1"
+        "editor.findRangeHighlightBackground": "#76c3d1"
+        "scrollbarSlider.background": "#d1c876"
+        "scrollbarSlider.hoverBackground": "#d1c876"
+        "editorGroupHeader.border": "#77a7f5"
+        "tab.border": "#77a7f5"
+        "tab.activeBackground": "#5b91e8"
+        "tab.activeForeground": "#fae204"
+        "tab.inactiveBackground": "#40639594" 
+        "tab.inactiveForeground": "#24bace"
+        "editorLineNumber.foreground": "#d1c876"
+        "editorLineNumber.activeForeground": "#77a7f5"
+        "editor.findMatchBackground": "#3e60a0"
+        "statusBar.background": "#568f84"
+        "statusBar.foreground": "#10d9eb"
+        "statusBar.border": "#10d9eb"
+        "activityBar.background": "#40639594" 
+        "sideBar.background": "#1d2728" 
+        "sideBar.foreground": "#77a7f5"
+        "sideBar.border": "#77a7f5"
+        "titleBar.border": "#77a7f5"
+        "titleBar.activeBackground": "#2465ce"
+        "titleBar.activeForeground": "#5fdad6"
+        "sideBarSectionHeader.background": "#447bc794"      
+    
+    }
+}

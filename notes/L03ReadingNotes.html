@@ -1,209 +1,871 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="L03 Readings notes for Jeremy T. Suchanski in WDD 330:
-    Web Frontend Development at Brigham Young University - Idaho">
-   <title>WDD330 L03 Readings Notes</title>
-   <link rel="stylesheet" href="../css/notes.css">
-</head>
-<body>
-    <p class= "calibri13"><span class= "romans">Jeremy Troy Suchanski</span></p>
-<p class= "calibri13"><span class= "romans">Web Frontend Development II</span></p>
-<p class= "calibri13"><span class= "romans">Gary James</span></p>
-<p class= "calibri13"><span class= "romans">April 23, 2022</span></p>
-<p class= "calibri14" id="center-it"><strong><span class= "romans6">L03 Readings Notes</span></strong></p>
-<p class= "calibri14" id="center-it"><span class= "treb">&nbsp;</span><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/9" target="_blank"><span class= "treb2">Ch9: The Window Object</span></a><strong><span class= "romans">&nbsp;(Notes)</span></strong></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Browser Object Model BOM</span></strong><span class= "f-size">: a collection of properties and methods that contain information about the browser and computer screen. These properties and methods are made available through the window object. Every browser window, tab, popup, frame, and iframe has a window object. The BOM only makes sense in a browser environment.</span></li>
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Global Object</span></strong><span class= "romans3">: If you don&rsquo;t know the name of the global object, you can also refer to it using the keyword this in the global scope. (code example (from within the global scope): const global = this;</span></li>
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Global Variables</span></strong><span class= "romans3">: variables that are created without using the const, let or var keywords. Global variables can be accessed in all parts of the program.</span> They <span class= "romans3">are actual properties of a global object. In general, you should refer to global variables without using the window object, unless you need to check whether a global variable has been defined. Then use the window object like (window.x for the global window object in the browser environment).</span></li>
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Methods of the Global Object</span></strong><span class= "romans3">: Like variables, it&rsquo;s customary to omit accessing them through the window object. (examples: parseInt(), &nbsp;isNaN() -</span> <span class= "romans3">ES6 made parseInt() and isNaN() methods of the Number object)</span></li>
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Dialogs</span></strong><span class= "romans3">: 3 functions that produced dialogs in browsers: alert(), confirm() and prompt(). These methods will stop the execution of a program in its tracks. This can cause problems if the program needs to process something else at the same time or the program is waiting for a callback function. There are some occasions when this functionality can be used as an advantage &ndash; example: stop the program from going ahead and deleting the resource while the user decides what to do.<strong><u>&nbsp;most browsers allow users to disable any dialogs from repeatedly appearing, meaning they are not a feature to be relied upon.</u></strong></span></li>
-    </ul>
-</div>
-<p class= "calibri14"><strong><span class= "romans">window.alert() method</span></strong><span class= "romans">: pauses the execution of the program and displays a message in a dialog box. It always returns undefined.</span></p>
-<p class= "calibri14"><strong><span class= "romans">window.confirm() method</span></strong><span class= "romans">: stops the execution of the program and displays a confirmation dialog that shows the message with the options of OK or Cancel. It returns true if the user clicks OK, and false if the user clicks Cancel.</span></p>
-<p class= "calibri14"><strong><span class= "romans">window.prompt() method</span></strong><span class= "romans">: stop the execution of the program and displays a dialog that shows a message</span> <span class= "romans">as well as an input field that allows the user to enter text.</span> <span class= "romans">If the user clicks OK, their entry is returned as a string or if the user clicks Cancel, null is returned.</span></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Browser Information</span></strong><span class= "romans3">: properties &amp; methods that provide info about the user&rsquo;s browser.</span></li>
-    </ul>
-</div>
-<p class= "calibri14"><strong><span class= "romans">Navigator object</span></strong><span class= "romans">: window object has a navigator property that points to it. It contains information about the browser being used.</span> <span class= "romans">Its userAgent property will return information about the browser and operating system being used. (code example: window.navigator.userAgent) Don&rsquo;t rely on this information though, as it can be modified by a user to masquerade as a different browser.</span></p>
-<ul class= "under">
-    <li class="arrow-ind"><strong><span class= "f-size">Browser Location</span></strong><span class= "romans3">: providing info about different fragments of the URL. <strong>window.location property</strong>: object containing info about the URL of the current page.</span>
-        <ol class= "circle-ind">
-            <li><strong><span class= "f-size">Location&rsquo;s Properties</span></strong><span class= "romans3">:</span></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="L03 Readings notes for Jeremy T. Suchanski in WDD 330:
+    Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>WDD330 L03 Readings Notes</title>
+    <link rel="stylesheet" href="../css/notes.css" />
+  </head>
+  <body>
+    <p class="calibri13"><span class="romans">Jeremy Troy Suchanski</span></p>
+    <p class="calibri13">
+      <span class="romans">Web Frontend Development II</span>
+    </p>
+    <p class="calibri13"><span class="romans">Gary James</span></p>
+    <p class="calibri13"><span class="romans">April 23, 2022</span></p>
+    <p class="calibri14" id="center-it">
+      <strong><span class="romans6">L03 Readings Notes</span></strong>
+    </p>
+    <p class="calibri14" id="center-it">
+      <span class="treb">&nbsp;</span
+      ><a
+        href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/9"
+        target="_blank"
+        ><span class="treb2">Ch9: The Window Object</span></a
+      ><strong><span class="romans">&nbsp;(Notes)</span></strong>
+    </p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Browser Object Model BOM</span></strong
+          ><span class="f-size"
+            >: a collection of properties and methods that contain information
+            about the browser and computer screen. These properties and methods
+            are made available through the window object. Every browser window,
+            tab, popup, frame, and iframe has a window object. The BOM only
+            makes sense in a browser environment.</span
+          >
+        </li>
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Global Object</span></strong
+          ><span class="romans3"
+            >: If you don&rsquo;t know the name of the global object, you can
+            also refer to it using the keyword this in the global scope. (code
+            example (from within the global scope): const global = this;</span
+          >
+        </li>
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Global Variables</span></strong
+          ><span class="romans3"
+            >: variables that are created without using the const, let or var
+            keywords. Global variables can be accessed in all parts of the
+            program.</span
+          >
+          They
+          <span class="romans3"
+            >are actual properties of a global object. In general, you should
+            refer to global variables without using the window object, unless
+            you need to check whether a global variable has been defined. Then
+            use the window object like (window.x for the global window object in
+            the browser environment).</span
+          >
+        </li>
+        <li class="calibri arrow-ind">
+          <strong
+            ><span class="f-size">Methods of the Global Object</span></strong
+          ><span class="romans3"
+            >: Like variables, it&rsquo;s customary to omit accessing them
+            through the window object. (examples: parseInt(), &nbsp;isNaN()
+            -</span
+          >
+          <span class="romans3"
+            >ES6 made parseInt() and isNaN() methods of the Number object)</span
+          >
+        </li>
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Dialogs</span></strong
+          ><span class="romans3"
+            >: 3 functions that produced dialogs in browsers: alert(), confirm()
+            and prompt(). These methods will stop the execution of a program in
+            its tracks. This can cause problems if the program needs to process
+            something else at the same time or the program is waiting for a
+            callback function. There are some occasions when this functionality
+            can be used as an advantage &ndash; example: stop the program from
+            going ahead and deleting the resource while the user decides what to
+            do.<strong
+              ><u
+                >&nbsp;most browsers allow users to disable any dialogs from
+                repeatedly appearing, meaning they are not a feature to be
+                relied upon.</u
+              ></strong
+            ></span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14">
+      <strong><span class="romans">window.alert() method</span></strong
+      ><span class="romans"
+        >: pauses the execution of the program and displays a message in a
+        dialog box. It always returns undefined.</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">window.confirm() method</span></strong
+      ><span class="romans"
+        >: stops the execution of the program and displays a confirmation dialog
+        that shows the message with the options of OK or Cancel. It returns true
+        if the user clicks OK, and false if the user clicks Cancel.</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">window.prompt() method</span></strong
+      ><span class="romans"
+        >: stop the execution of the program and displays a dialog that shows a
+        message</span
+      >
+      <span class="romans"
+        >as well as an input field that allows the user to enter text.</span
+      >
+      <span class="romans"
+        >If the user clicks OK, their entry is returned as a string or if the
+        user clicks Cancel, null is returned.</span
+      >
+    </p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Browser Information</span></strong
+          ><span class="romans3"
+            >: properties &amp; methods that provide info about the user&rsquo;s
+            browser.</span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14">
+      <strong><span class="romans">Navigator object</span></strong
+      ><span class="romans"
+        >: window object has a navigator property that points to it. It contains
+        information about the browser being used.</span
+      >
+      <span class="romans"
+        >Its userAgent property will return information about the browser and
+        operating system being used. (code example: window.navigator.userAgent)
+        Don&rsquo;t rely on this information though, as it can be modified by a
+        user to masquerade as a different browser.</span
+      >
+    </p>
+    <ul class="under">
+      <li class="arrow-ind">
+        <strong><span class="f-size">Browser Location</span></strong
+        ><span class="romans3"
+          >: providing info about different fragments of the URL.
+          <strong>window.location property</strong>: object containing info
+          about the URL of the current page.</span
+        >
+        <ol class="circle-ind">
+          <li>
+            <strong
+              ><span class="f-size">Location&rsquo;s Properties</span></strong
+            ><span class="romans3">:</span>
+          </li>
         </ol>
-    </li>
-</ul>
-<p class= "calibri15"><strong><span class= "romans">href property</span></strong><span class= "romans">: returns the full URL as a string &amp; is a read/write property, meaning it can be changed by assignment. (code example: window.location.href)</span></p>
-<p class= "calibri15"><strong><span class= "romans">protocol property</span></strong><span class= "romans">: returns a string describing the protocol used (such as http, https, pop2, ftp etc. with : at the end)</span></p>
-<p class= "calibri15"><strong><span class= "romans">host property</span></strong><span class= "romans">: returns a string of the domain of the current URL &amp; the port #</span></p>
-<p class= "calibri15"><strong><span class= "romans">hostname property</span></strong><span class= "romans">: returns a string describing the domain of the current URL</span></p>
-<p class= "calibri15"><strong><span class= "romans">port property</span></strong><span class= "romans">: returns a string of the port number, although it will return an empty string if the port is not explicitly stated in the URL</span></p>
-<p class= "calibri15"><strong><span class= "romans">pathname property</span></strong><span class= "romans">: returns a string of the path that follows the domain</span></p>
-<p class= "calibri15"><strong><span class= "romans">search property</span></strong><span class= "romans">: returns a string that starts with a &ldquo;?&rdquo; followed by the query string parameters</span></p>
-<p class= "calibri15"><strong><span class= "romans">hash property</span></strong><span class= "romans">: returns a string that starts with a &ldquo;#&rdquo; followed by the fragment id&nbsp;</span></p>
-<p class= "calibri15"><strong><span class= "romans">origin property</span></strong><span class= "romans">: returns a string that shows the protocol and domain where the current page originated from. This property is read-only, so cannot it be changed.</span></p>
-<div class= "calibri">
-    <ol class= "circle-ind2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Location&rsquo;s Methods</span></strong><span class= "romans3">:</span></li>
-    </ol>
-</div>
-<p class= "calibri15"><strong><span class= "romans">reload() method</span></strong><span class= "romans">: &nbsp;can be used to force a reload of the current page. If it&rsquo;s given a parameter of true, it will force the browser to reload the page from the server, instead of using a cached page.</span></p>
-<p class= "calibri15"><strong><span class= "romans">assign() method</span></strong><span class= "romans">: can be used to load another resource from a URL provided as a parameter</span></p>
-<p class= "calibri15"><strong><span class= "romans">replace() method</span></strong><span class= "romans">: is almost the same as the assign() method, except the current page will not be stored in the session history, so the user will be unable to navigate back to it using the back button.</span></p>
-<p class= "calibri15"><strong><span class= "romans">toString() method</span></strong><span class= "romans">: returns a string containing the whole URL</span></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Browser History</span></strong><span class= "romans3">: providing info about previously visited pages</span></li>
+      </li>
     </ul>
-</div>
-<p class= "calibri14"><strong><span class= "romans">window.history property</span></strong><span class= "romans">: used to access information about any previously visited pages in the current browser session</span></p>
-<p class= "calibri16"><strong><span class= "romans">length property</span></strong><span class= "romans">: shows how many pages have been visited before the current pg.</span></p>
-<p class= "calibri16"><strong><span class= "romans">go() method</span></strong><span class= "romans">: can be used to go to a specific page, where 0 is the current page.</span></p>
-<p class= "calibri15"><strong><span class= "romans">forward() method</span></strong><span class= "romans">: used to navigate forwards by one page respectively, just like using the browser&rsquo;s forward button.</span></p>
-<p class= "calibri15"><strong><span class= "romans">back() method</span></strong><span class= "romans">: used to navigate backwards by one page respectively, just like using the browser&rsquo;s back button.</span></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Controlling Windows</span></strong><span class= "romans3">: providing ways to control the window. It&rsquo;s rare that it would be sensible to use any of these methods, so think very carefully before using them. There will almost always be a better alternative</span></li>
-    </ul>
-</div>
-<p class= "calibri14"><strong><span class= "romans">window.open() method</span></strong><span class= "romans">: opens a new window &amp; takes the URL of the page to be opened as its first parameter, the window title as its second parameter, and a list of attributes as the third parameter. (code example: const popup = window.open(&apos;https://sitepoint.com&apos;,&apos; SitePoint&apos;,&apos;width=400,height=400,resizable=yes&apos;);</span></p>
-<p class= "calibri14"><strong><span class= "romans">close() method</span></strong><span class= "romans">: can be used to close a window, assuming you have a reference to it</span></p>
-<p class= "calibri14"><strong><span class= "romans">window.moveTo() method</span></strong><span class= "romans">: move a window with two parameters that are the X and Y coordinates of the screen that the window is to be moved to.</span></p>
-<p class= "calibri14"><strong><span class= "romans">window.resizeTo() method</span></strong><span class= "romans">: resizes a window using two parameters that specify the width and height</span></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Screen Information</span></strong><span class= "romans3">: getting information about the screen the browser is displayed on.</span></li>
-    </ul>
-</div>
-<p class= "calibri14"><span class= "romans">The Screen object has more uses for mobile devices. It also allows you to do things like turn off the device&rsquo;s screen, detect a change in its orientation or lock it in a specific orientation.</span></p>
-<p class= "calibri14"><strong><span class= "romans">window.screen object</span></strong><span class= "romans">: contains info about the screen the browser is displayed on.</span></p>
-<p class= "calibri15"><strong><span class= "romans">width property</span></strong><span class= "romans">: gives the width of the screen in pixels</span></p>
-<p class= "calibri15"><strong><span class= "romans">height property</span></strong><span class= "romans">: gives the width of the screen in pixels</span></p>
-<p class= "calibri15"><strong><span class= "romans">availWidth property</span></strong><span class= "romans">: gives the width of the screen, excluding any operating system menus</span></p>
-<p class= "calibri15"><strong><span class= "romans">availHeight property</span></strong><span class= "romans">: gives the height of the screen, excluding any operating system menus</span></p>
-<p class= "calibri15"><strong><span class= "romans">colorDepth property</span></strong><span class= "romans">: is used to find the color bit depth of the user&rsquo;s monitor</span></p>
-<ul class= "under">
-    <li class="arrow-ind"><strong><span class= "f-size">Window Document Object</span></strong><span class= "romans3">: has properties and methods that deal with the page that has been loaded into the window.</span>
-        <ol class= "circle-ind">
-            <li><strong><span class= "romans3">Document&rsquo;s Methods</span></strong><span class= "line-h">:</span></li>
+    <p class="calibri15">
+      <strong><span class="romans">href property</span></strong
+      ><span class="romans"
+        >: returns the full URL as a string &amp; is a read/write property,
+        meaning it can be changed by assignment. (code example:
+        window.location.href)</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">protocol property</span></strong
+      ><span class="romans"
+        >: returns a string describing the protocol used (such as http, https,
+        pop2, ftp etc. with : at the end)</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">host property</span></strong
+      ><span class="romans"
+        >: returns a string of the domain of the current URL &amp; the port
+        #</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">hostname property</span></strong
+      ><span class="romans"
+        >: returns a string describing the domain of the current URL</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">port property</span></strong
+      ><span class="romans"
+        >: returns a string of the port number, although it will return an empty
+        string if the port is not explicitly stated in the URL</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">pathname property</span></strong
+      ><span class="romans"
+        >: returns a string of the path that follows the domain</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">search property</span></strong
+      ><span class="romans"
+        >: returns a string that starts with a &ldquo;?&rdquo; followed by the
+        query string parameters</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">hash property</span></strong
+      ><span class="romans"
+        >: returns a string that starts with a &ldquo;#&rdquo; followed by the
+        fragment id&nbsp;</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">origin property</span></strong
+      ><span class="romans"
+        >: returns a string that shows the protocol and domain where the current
+        page originated from. This property is read-only, so cannot it be
+        changed.</span
+      >
+    </p>
+    <div class="calibri">
+      <ol class="circle-ind2">
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Location&rsquo;s Methods</span></strong
+          ><span class="romans3">:</span>
+        </li>
+      </ol>
+    </div>
+    <p class="calibri15">
+      <strong><span class="romans">reload() method</span></strong
+      ><span class="romans"
+        >: &nbsp;can be used to force a reload of the current page. If
+        it&rsquo;s given a parameter of true, it will force the browser to
+        reload the page from the server, instead of using a cached page.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">assign() method</span></strong
+      ><span class="romans"
+        >: can be used to load another resource from a URL provided as a
+        parameter</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">replace() method</span></strong
+      ><span class="romans"
+        >: is almost the same as the assign() method, except the current page
+        will not be stored in the session history, so the user will be unable to
+        navigate back to it using the back button.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">toString() method</span></strong
+      ><span class="romans">: returns a string containing the whole URL</span>
+    </p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Browser History</span></strong
+          ><span class="romans3"
+            >: providing info about previously visited pages</span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14">
+      <strong><span class="romans">window.history property</span></strong
+      ><span class="romans"
+        >: used to access information about any previously visited pages in the
+        current browser session</span
+      >
+    </p>
+    <p class="calibri16">
+      <strong><span class="romans">length property</span></strong
+      ><span class="romans"
+        >: shows how many pages have been visited before the current pg.</span
+      >
+    </p>
+    <p class="calibri16">
+      <strong><span class="romans">go() method</span></strong
+      ><span class="romans"
+        >: can be used to go to a specific page, where 0 is the current
+        page.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">forward() method</span></strong
+      ><span class="romans"
+        >: used to navigate forwards by one page respectively, just like using
+        the browser&rsquo;s forward button.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">back() method</span></strong
+      ><span class="romans"
+        >: used to navigate backwards by one page respectively, just like using
+        the browser&rsquo;s back button.</span
+      >
+    </p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Controlling Windows</span></strong
+          ><span class="romans3"
+            >: providing ways to control the window. It&rsquo;s rare that it
+            would be sensible to use any of these methods, so think very
+            carefully before using them. There will almost always be a better
+            alternative</span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14">
+      <strong><span class="romans">window.open() method</span></strong
+      ><span class="romans"
+        >: opens a new window &amp; takes the URL of the page to be opened as
+        its first parameter, the window title as its second parameter, and a
+        list of attributes as the third parameter. (code example: const popup =
+        window.open(&apos;https://sitepoint.com&apos;,&apos;
+        SitePoint&apos;,&apos;width=400,height=400,resizable=yes&apos;);</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">close() method</span></strong
+      ><span class="romans"
+        >: can be used to close a window, assuming you have a reference to
+        it</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">window.moveTo() method</span></strong
+      ><span class="romans"
+        >: move a window with two parameters that are the X and Y coordinates of
+        the screen that the window is to be moved to.</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">window.resizeTo() method</span></strong
+      ><span class="romans"
+        >: resizes a window using two parameters that specify the width and
+        height</span
+      >
+    </p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Screen Information</span></strong
+          ><span class="romans3"
+            >: getting information about the screen the browser is displayed
+            on.</span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14">
+      <span class="romans"
+        >The Screen object has more uses for mobile devices. It also allows you
+        to do things like turn off the device&rsquo;s screen, detect a change in
+        its orientation or lock it in a specific orientation.</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">window.screen object</span></strong
+      ><span class="romans"
+        >: contains info about the screen the browser is displayed on.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">width property</span></strong
+      ><span class="romans">: gives the width of the screen in pixels</span>
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">height property</span></strong
+      ><span class="romans">: gives the width of the screen in pixels</span>
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">availWidth property</span></strong
+      ><span class="romans"
+        >: gives the width of the screen, excluding any operating system
+        menus</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">availHeight property</span></strong
+      ><span class="romans"
+        >: gives the height of the screen, excluding any operating system
+        menus</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">colorDepth property</span></strong
+      ><span class="romans"
+        >: is used to find the color bit depth of the user&rsquo;s monitor</span
+      >
+    </p>
+    <ul class="under">
+      <li class="arrow-ind">
+        <strong><span class="f-size">Window Document Object</span></strong
+        ><span class="romans3"
+          >: has properties and methods that deal with the page that has been
+          loaded into the window.</span
+        >
+        <ol class="circle-ind">
+          <li>
+            <strong
+              ><span class="romans3">Document&rsquo;s Methods</span></strong
+            ><span class="line-h">:</span>
+          </li>
         </ol>
-    </li>
-</ul>
-<p class= "calibri15"><strong><span class= "romans">write() method</span></strong><span class= "romans">: writes a string of text to the page. If a page has already loaded, it will completely replace the current document. I</span> <span class= "romans">It is heavily frowned upon as it can only be realistically used by mixing JavaScript within an HTML document. There are still some extremely rare legitimate uses of itt is possible to include HTML in the string. (code example: document.write(&quot;Hello, world!&quot;) The following example will place the text &quot;Hello, world!&quot; inside the &lt;h1&gt; tags and the rest of the page will display as normal:&nbsp;</span></p>
-<p class= "calibri15"><span class= "romans">&lt;h1&gt;</span></p>
-<p class= "calibri15"><span class= "romans">&nbsp; &nbsp; &lt;script&gt;document.write(&quot;Hello, world!&quot;)&lt;/script&gt;</span></p>
-<p class= "calibri15"><span class= "romans">&lt;/h1&gt;</span></p>
-<p class= "calibri15"><strong><span class= "romans">Cookies</span></strong><span class= "romans">: (created by Netscape) small files that are saved locally on a user&rsquo;s computer. (A browser does not remember anything from one request to another.)</span> <span class= "romans">Cookies can be used to sidestep this problem by storing info that can then be retrieved between requests.</span> <span class= "romans">They can only be read by a web page from the same domain that set them to stop sites being able to access information about users, such as other sites they have visited.</span> <span class= "romans">Cookies can be used for personalizing a user&rsquo;s browsing experience, storing user preferences, keeping track of user choices (such as a shopping cart), authentication and tracking users.</span> <span class= "romans">Cookies take the form of a text file that contain a list of name/value pairs separated by semicolons.</span></p>
-<div class= "calibri">
-    <ol class= "arrow-ind2">
-        <li class= "calibri"><strong><span class= "f-size">Document&rsquo;s Properties</span></strong><span class= "romans3">:</span></li>
-    </ol>
-</div>
-<p class= "calibri15"><strong><span class= "romans">cookie property</span></strong><span class= "romans">: creates a cookie by assigning it to JavaScript&rsquo;s &ldquo;cookie jar.&rdquo;</span> (code example: document.cookie = &apos;name=Batman&apos;) <span class= "romans">Assigning another cookie to it won&rsquo;t overwrite the entire property, it will just append it to the end of the string. You can also see the current contents of the cookie jar with it (code example: document.cookie:)</span> U<span class= "romans">se the split method to break the string into an array containing each name/value pair, then use for of loop to iterate through the array.</span></p>
-<p class= "calibri15"><strong><span class= "romans">session cookies</span></strong><span class= "romans">: This means they are deleted once a browser session is finished (when the user closes the browser tab or window). This is the default setting.</span></p>
-<p class= "calibri15"><strong><span class= "romans">persistent cookies</span></strong><span class= "romans">: lasting beyond the browser session.</span></p>
-<p class= "calibri15"><strong><span class= "romans">&quot;; expires=date&quot;</span></strong><span class= "romans">: &nbsp;added to the end of the cookie when it&rsquo;s set, where date is a date value in the UTC String format Day, DD-Mon-YYYY HH:MM:SS GMT makes it into persistent cookies. The following example sets a cookie to expire in one day&rsquo;s time:</span></p>
-<p class= "calibri15"><span class= "romans">const expiryDate = new Date();&nbsp;</span></p>
-<p class= "calibri15"><span class= "romans">const tomorrow = expiryDate.getTime() + 1000 * 60 * 60 * 24;</span></p>
-<p class= "calibri15"><span class= "romans">expiryDate.setTime(tomorrow);</span></p>
-<p class= "calibri15"><span class= "romans">document.cookie = `name=Batman; expires=${ expiryDate.toUTCString()}`;</span></p>
-<p class= "calibri15"><strong><span class= "romans">&ldquo;; max-age=seconds&rdquo;</span></strong><span class= "romans">: added to the end of the cookie when it&rsquo;s set. Example:</span></p>
-<p class= "calibri15"><span class= "romans">document.cookie = &apos;name=Batman; max-age=86400&apos; // 86400 secs = 1 day</span></p>
-<p class= "calibri15"><strong><span class= "romans">sensitive information</span></strong><span class= "romans">: Applications that contain sensitive information shouldn&rsquo;t rely on cookies expiring using these methods. Browsers can sometimes hold on to information stored in a cookie that should have expired when the &ldquo;session restore&rdquo; feature is used after a crash.</span></p>
-<p class= "calibri15"><strong><span class= "romans">&ldquo;; path=/&rdquo;</span></strong><span class= "romans">: adding this to the end of the cookie when it&rsquo;s set expands the default of pages so that any page in the root directory can read the cookie.</span></p>
-<p class= "calibri15"><strong><span class= "romans">&quot;; domain=domainName&quot;</span></strong><span class= "romans">: by adding this to the end of the cookie when it&rsquo;s set you can set the domain. A cookie can only be read by the domain that created it anyway, but doing this will allow all subdomains of the site to read it.</span></p>
-<p class= "calibri15"><strong><span class= "romans">&ldquo;; secure&rdquo;</span></strong><span class= "romans">: added to the end of the cookie will ensure it&rsquo;s only transmitted over a secure HTTPS network.</span></p>
-<p class= "calibri15"><strong><span class= "romans">Deleting Cookies</span></strong><span class= "romans">: To remove a cookie, set it to expire at a time in the past or if a cookie is a session cookie, it will expire when the tab or window is closed.</span></p>
-<p class= "calibri15"><strong><span class= "romans">Cookies Libraries</span></strong><span class= "romans">: JavaScript&rsquo;s cookie handling is quite basic and can also be quite cumbersome. Many developers use a library such as #1 Cookies.js or #2 jsCookie.</span></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Timing Functions</span></strong><span class= "romans3">: The window object provides some useful methods for scheduling the execution of a function, and for repeatedly executing functions at regular intervals.</span></li>
+      </li>
     </ul>
-</div>
-<p class= "calibri14"><strong><span class= "romans">setTimeout() method</span></strong><span class= "romans">: invokes the callback function after a set number of milliseconds by accepting a callback to a function as its first parameter, a number of milliseconds as its second parameter and returns an integer that is an ID used to reference that particular timeout which can be used to cancel it. (code example: window.setTimeout( () =&gt; alert(&quot;Time&apos;s Up!&quot;), 3000);)</span></p>
-<p class= "calibri14"><strong><span class= "romans">window.clearTimeout() method</span></strong><span class= "romans">: Cancels the timeout using the timeout&rsquo;s reference ID as the parameter.</span></p>
-<p class= "calibri14"><strong><span class= "romans">setInterval() method</span></strong><span class= "romans">: repeatedly invokes the callback function after every given number of milliseconds by accepting a callback to a function as its first parameter, a number of milliseconds as its second parameter and returns an integer that is an ID used to reference that particular timeout which can be used to cancel it. (code example: function chant(){ console.log(&apos;Beetlejuice&apos;); } const summon = window.setInterval(chant,1000);)</span></p>
-<p class= "calibri14"><strong><span class= "romans">window.clearInterval()</span></strong><span class= "romans">: Cancels the timeout using the variable set equal to the interval as the parameter because it returns the reference ID&rsquo;s returned. (code example: window.clearInterval(summon);)</span></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">Animation</span></strong><span class= "romans3">: The setTimeOut() and setInterval() methods can be used to animate elements on a web page, but not very smoothly. Code Example:</span></li>
-    </ul>
-</div>
-<p class= "calibri14"><span class= "romans">HTML:</span></p>
-<p class= "calibri14"><span class= "romans">&lt;!doctype html&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;html lang=&apos;en&apos;&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;head&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;meta charset=&apos;utf-8&apos;&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;title&gt;Animation Example&lt;/title&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;link rel=&apos;stylesheet&apos; href=&apos;styles.css&apos;&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;/head&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;body&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;div id=&apos;square&apos;&gt;&lt;/div&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;script src=&apos;main.js&apos;&gt;&lt;/script&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;/body&gt;</span></p>
-<p class= "calibri14"><span class= "romans">&lt;/html&gt;</span></p>
-<p class= "calibri14"><span class= "romans">CSS:</span></p>
-<p class= "calibri14"><span class= "romans">#square {</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;margin: 100px;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;width: 100px;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;height: 100px;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;background: #d16;</span></p>
-<p class= "calibri14"><span class= "romans">}</span></p>
-<p class= "calibri14"><span class= "romans">JavaScript:</span></p>
-<p class= "calibri14"><span class= "romans">const squareElement = document.getElementById(&apos;square&apos;);</span></p>
-<p class= "calibri14"><span class= "romans">let angle = 0;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp;</span></p>
-<p class= "calibri14"><span class= "romans">setInterval( () =&gt; {</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;angle = (angle + 2) % 360;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;squareElement.style.transform = `rotate(${angle}deg)`</span></p>
-<p class= "calibri14"><span class= "romans">}, 1000/60);</span></p>
-<p class= "calibri14"><strong><span class= "romans">requestAnimationFrame method</span></strong><span class= "romans">: makes the most of the browser&rsquo;s built-in graphics-handling capabilities, and not running the animation when the tab is inactive, resulting in a much smoother performance. It&rsquo;s supported in all major browsers, including Internet Explorer from version 10 onwards. Code Example:&nbsp;</span></p>
-<p class= "calibri14"><span class= "romans">HTML &amp; CSS: (Same as above)</span></p>
-<p class= "calibri14"><span class= "romans">JavaScript:</span></p>
-<p class= "calibri14"><span class= "romans">const squareElement = document.getElementById(&apos;square&apos;);</span></p>
-<p class= "calibri14"><span class= "romans">let angle = 0;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp;</span></p>
-<p class= "calibri14"><span class= "romans">function rotate() {</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;angle = (angle + 2)%360;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;squareElement.style.transform = `rotate(${angle}deg)`</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;window.requestAnimationFrame(rotate);</span></p>
-<p class= "calibri14"><span class= "romans">}</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp;</span></p>
-<p class= "calibri14"><span class= "romans">const id = requestAnimationFrame(rotate);</span></p>
-<p class= "calibri14"><strong><span class= "romans">cancelAnimationFrame() method</span></strong><span class= "romans">: cancels the animation with the return id of the requestAnimationFrame method.</span></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><span class= "romans3">Pure CSS Animation: In general, it is typically better to use CSS for any animation effects, although there may be times when JavaScript might be the better solution.&nbsp;</span></li>
-    </ul>
-</div>
-<p class= "calibri14"><span class= "romans">Code Example:&nbsp;</span></p>
-<p class= "calibri14"><span class= "romans">#square {</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;margin: 100px;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;width: 100px;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;height: 100px;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;background: #cc0;</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp; &nbsp; &nbsp;animation: spin 4s linear infinite;</span></p>
-<p class= "calibri14"><span class= "romans">}</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp;</span></p>
-<p class= "calibri14"><span class= "romans">@keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(3600deg); } }</span></p>
-<p class= "calibri17"><span class= "romans">&nbsp;</span></p>
-<p class= "calibri18"><span class= "black-c"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" target="_blank"><span class= "treb3">MDN The Content Template Element</span></a></span><span class= "black-c">&nbsp;(Notes)</span></p>
-<p class= "calibri14"><span class= "romans">&nbsp;</span></p>
-<div class= "calibri">
-    <ul class= "under2">
-        <li class= "calibri arrow-ind"><strong><span class= "f-size">&lt;template&gt; &nbsp;(The Content Template element)</span></strong><span class= "romans3">: is a mechanism for holding HTML that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript.</span> <span class= "line-h">Think of a template as a content fragment that is being stored for subsequent use in the document.</span></li>
-    </ul>
-</div>
-<p class= "calibri14"><strong><span class= "romans">Attributes</span></strong><span class= "romans">: This element only includes the global attributes.</span></p>
-<p class= "calibri14"><strong><span class= "romans">content property</span></strong><span class= "romans">: is a read-only DocumentFragment containing the DOM subtree which the template represents.</span></p>
-<p class= "calibri17"><strong><span class= "romans">Avoiding DocumentFragment pitfall</span></strong><span class= "romans">: A DocumentFragment is not a valid target for various events, as such it is often preferable to clone or refer to the elements within it.</span></p>
-</body>
+    <p class="calibri15">
+      <strong><span class="romans">write() method</span></strong
+      ><span class="romans"
+        >: writes a string of text to the page. If a page has already loaded, it
+        will completely replace the current document. I</span
+      >
+      <span class="romans"
+        >It is heavily frowned upon as it can only be realistically used by
+        mixing JavaScript within an HTML document. There are still some
+        extremely rare legitimate uses of itt is possible to include HTML in the
+        string. (code example: document.write(&quot;Hello, world!&quot;) The
+        following example will place the text &quot;Hello, world!&quot; inside
+        the &lt;h1&gt; tags and the rest of the page will display as
+        normal:&nbsp;</span
+      >
+    </p>
+    <p class="calibri15"><span class="romans">&lt;h1&gt;</span></p>
+    <p class="calibri15">
+      <span class="romans"
+        >&nbsp; &nbsp; &lt;script&gt;document.write(&quot;Hello,
+        world!&quot;)&lt;/script&gt;</span
+      >
+    </p>
+    <p class="calibri15"><span class="romans">&lt;/h1&gt;</span></p>
+    <p class="calibri15">
+      <strong><span class="romans">Cookies</span></strong
+      ><span class="romans"
+        >: (created by Netscape) small files that are saved locally on a
+        user&rsquo;s computer. (A browser does not remember anything from one
+        request to another.)</span
+      >
+      <span class="romans"
+        >Cookies can be used to sidestep this problem by storing info that can
+        then be retrieved between requests.</span
+      >
+      <span class="romans"
+        >They can only be read by a web page from the same domain that set them
+        to stop sites being able to access information about users, such as
+        other sites they have visited.</span
+      >
+      <span class="romans"
+        >Cookies can be used for personalizing a user&rsquo;s browsing
+        experience, storing user preferences, keeping track of user choices
+        (such as a shopping cart), authentication and tracking users.</span
+      >
+      <span class="romans"
+        >Cookies take the form of a text file that contain a list of name/value
+        pairs separated by semicolons.</span
+      >
+    </p>
+    <div class="calibri">
+      <ol class="arrow-ind2">
+        <li class="calibri">
+          <strong
+            ><span class="f-size">Document&rsquo;s Properties</span></strong
+          ><span class="romans3">:</span>
+        </li>
+      </ol>
+    </div>
+    <p class="calibri15">
+      <strong><span class="romans">cookie property</span></strong
+      ><span class="romans"
+        >: creates a cookie by assigning it to JavaScript&rsquo;s &ldquo;cookie
+        jar.&rdquo;</span
+      >
+      (code example: document.cookie = &apos;name=Batman&apos;)
+      <span class="romans"
+        >Assigning another cookie to it won&rsquo;t overwrite the entire
+        property, it will just append it to the end of the string. You can also
+        see the current contents of the cookie jar with it (code example:
+        document.cookie:)</span
+      >
+      U<span class="romans"
+        >se the split method to break the string into an array containing each
+        name/value pair, then use for of loop to iterate through the
+        array.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">session cookies</span></strong
+      ><span class="romans"
+        >: This means they are deleted once a browser session is finished (when
+        the user closes the browser tab or window). This is the default
+        setting.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">persistent cookies</span></strong
+      ><span class="romans">: lasting beyond the browser session.</span>
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">&quot;; expires=date&quot;</span></strong
+      ><span class="romans"
+        >: &nbsp;added to the end of the cookie when it&rsquo;s set, where date
+        is a date value in the UTC String format Day, DD-Mon-YYYY HH:MM:SS GMT
+        makes it into persistent cookies. The following example sets a cookie to
+        expire in one day&rsquo;s time:</span
+      >
+    </p>
+    <p class="calibri15">
+      <span class="romans">const expiryDate = new Date();&nbsp;</span>
+    </p>
+    <p class="calibri15">
+      <span class="romans"
+        >const tomorrow = expiryDate.getTime() + 1000 * 60 * 60 * 24;</span
+      >
+    </p>
+    <p class="calibri15">
+      <span class="romans">expiryDate.setTime(tomorrow);</span>
+    </p>
+    <p class="calibri15">
+      <span class="romans"
+        >document.cookie = `name=Batman; expires=${
+        expiryDate.toUTCString()}`;</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong
+        ><span class="romans">&ldquo;; max-age=seconds&rdquo;</span></strong
+      ><span class="romans"
+        >: added to the end of the cookie when it&rsquo;s set. Example:</span
+      >
+    </p>
+    <p class="calibri15">
+      <span class="romans"
+        >document.cookie = &apos;name=Batman; max-age=86400&apos; // 86400 secs
+        = 1 day</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">sensitive information</span></strong
+      ><span class="romans"
+        >: Applications that contain sensitive information shouldn&rsquo;t rely
+        on cookies expiring using these methods. Browsers can sometimes hold on
+        to information stored in a cookie that should have expired when the
+        &ldquo;session restore&rdquo; feature is used after a crash.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">&ldquo;; path=/&rdquo;</span></strong
+      ><span class="romans"
+        >: adding this to the end of the cookie when it&rsquo;s set expands the
+        default of pages so that any page in the root directory can read the
+        cookie.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong
+        ><span class="romans">&quot;; domain=domainName&quot;</span></strong
+      ><span class="romans"
+        >: by adding this to the end of the cookie when it&rsquo;s set you can
+        set the domain. A cookie can only be read by the domain that created it
+        anyway, but doing this will allow all subdomains of the site to read
+        it.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">&ldquo;; secure&rdquo;</span></strong
+      ><span class="romans"
+        >: added to the end of the cookie will ensure it&rsquo;s only
+        transmitted over a secure HTTPS network.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">Deleting Cookies</span></strong
+      ><span class="romans"
+        >: To remove a cookie, set it to expire at a time in the past or if a
+        cookie is a session cookie, it will expire when the tab or window is
+        closed.</span
+      >
+    </p>
+    <p class="calibri15">
+      <strong><span class="romans">Cookies Libraries</span></strong
+      ><span class="romans"
+        >: JavaScript&rsquo;s cookie handling is quite basic and can also be
+        quite cumbersome. Many developers use a library such as #1 Cookies.js or
+        #2 jsCookie.</span
+      >
+    </p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Timing Functions</span></strong
+          ><span class="romans3"
+            >: The window object provides some useful methods for scheduling the
+            execution of a function, and for repeatedly executing functions at
+            regular intervals.</span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14">
+      <strong><span class="romans">setTimeout() method</span></strong
+      ><span class="romans"
+        >: invokes the callback function after a set number of milliseconds by
+        accepting a callback to a function as its first parameter, a number of
+        milliseconds as its second parameter and returns an integer that is an
+        ID used to reference that particular timeout which can be used to cancel
+        it. (code example: window.setTimeout( () =&gt; alert(&quot;Time&apos;s
+        Up!&quot;), 3000);)</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">window.clearTimeout() method</span></strong
+      ><span class="romans"
+        >: Cancels the timeout using the timeout&rsquo;s reference ID as the
+        parameter.</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">setInterval() method</span></strong
+      ><span class="romans"
+        >: repeatedly invokes the callback function after every given number of
+        milliseconds by accepting a callback to a function as its first
+        parameter, a number of milliseconds as its second parameter and returns
+        an integer that is an ID used to reference that particular timeout which
+        can be used to cancel it. (code example: function chant(){
+        console.log(&apos;Beetlejuice&apos;); } const summon =
+        window.setInterval(chant,1000);)</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">window.clearInterval()</span></strong
+      ><span class="romans"
+        >: Cancels the timeout using the variable set equal to the interval as
+        the parameter because it returns the reference ID&rsquo;s returned.
+        (code example: window.clearInterval(summon);)</span
+      >
+    </p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <strong><span class="f-size">Animation</span></strong
+          ><span class="romans3"
+            >: The setTimeOut() and setInterval() methods can be used to animate
+            elements on a web page, but not very smoothly. Code Example:</span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14"><span class="romans">HTML:</span></p>
+    <p class="calibri14"><span class="romans">&lt;!doctype html&gt;</span></p>
+    <p class="calibri14">
+      <span class="romans">&lt;html lang=&apos;en&apos;&gt;</span>
+    </p>
+    <p class="calibri14"><span class="romans">&lt;head&gt;</span></p>
+    <p class="calibri14">
+      <span class="romans">&lt;meta charset=&apos;utf-8&apos;&gt;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans">&lt;title&gt;Animation Example&lt;/title&gt;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans"
+        >&lt;link rel=&apos;stylesheet&apos;
+        href=&apos;styles.css&apos;&gt;</span
+      >
+    </p>
+    <p class="calibri14"><span class="romans">&lt;/head&gt;</span></p>
+    <p class="calibri14"><span class="romans">&lt;body&gt;</span></p>
+    <p class="calibri14">
+      <span class="romans">&lt;div id=&apos;square&apos;&gt;&lt;/div&gt;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans"
+        >&lt;script src=&apos;main.js&apos;&gt;&lt;/script&gt;</span
+      >
+    </p>
+    <p class="calibri14"><span class="romans">&lt;/body&gt;</span></p>
+    <p class="calibri14"><span class="romans">&lt;/html&gt;</span></p>
+    <p class="calibri14"><span class="romans">CSS:</span></p>
+    <p class="calibri14"><span class="romans">#square {</span></p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;margin: 100px;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;width: 100px;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;height: 100px;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;background: #d16;</span>
+    </p>
+    <p class="calibri14"><span class="romans">}</span></p>
+    <p class="calibri14"><span class="romans">JavaScript:</span></p>
+    <p class="calibri14">
+      <span class="romans"
+        >const squareElement =
+        document.getElementById(&apos;square&apos;);</span
+      >
+    </p>
+    <p class="calibri14"><span class="romans">let angle = 0;</span></p>
+    <p class="calibri14"><span class="romans">&nbsp;</span></p>
+    <p class="calibri14"><span class="romans">setInterval( () =&gt; {</span></p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;angle = (angle + 2) % 360;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans"
+        >&nbsp; &nbsp; &nbsp;squareElement.style.transform =
+        `rotate(${angle}deg)`</span
+      >
+    </p>
+    <p class="calibri14"><span class="romans">}, 1000/60);</span></p>
+    <p class="calibri14">
+      <strong><span class="romans">requestAnimationFrame method</span></strong
+      ><span class="romans"
+        >: makes the most of the browser&rsquo;s built-in graphics-handling
+        capabilities, and not running the animation when the tab is inactive,
+        resulting in a much smoother performance. It&rsquo;s supported in all
+        major browsers, including Internet Explorer from version 10 onwards.
+        Code Example:&nbsp;</span
+      >
+    </p>
+    <p class="calibri14">
+      <span class="romans">HTML &amp; CSS: (Same as above)</span>
+    </p>
+    <p class="calibri14"><span class="romans">JavaScript:</span></p>
+    <p class="calibri14">
+      <span class="romans"
+        >const squareElement =
+        document.getElementById(&apos;square&apos;);</span
+      >
+    </p>
+    <p class="calibri14"><span class="romans">let angle = 0;</span></p>
+    <p class="calibri14"><span class="romans">&nbsp;</span></p>
+    <p class="calibri14"><span class="romans">function rotate() {</span></p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;angle = (angle + 2)%360;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans"
+        >&nbsp; &nbsp; &nbsp;squareElement.style.transform =
+        `rotate(${angle}deg)`</span
+      >
+    </p>
+    <p class="calibri14">
+      <span class="romans"
+        >&nbsp; &nbsp; &nbsp;window.requestAnimationFrame(rotate);</span
+      >
+    </p>
+    <p class="calibri14"><span class="romans">}</span></p>
+    <p class="calibri14"><span class="romans">&nbsp;</span></p>
+    <p class="calibri14">
+      <span class="romans">const id = requestAnimationFrame(rotate);</span>
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">cancelAnimationFrame() method</span></strong
+      ><span class="romans"
+        >: cancels the animation with the return id of the requestAnimationFrame
+        method.</span
+      >
+    </p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <span class="romans3"
+            >Pure CSS Animation: In general, it is typically better to use CSS
+            for any animation effects, although there may be times when
+            JavaScript might be the better solution.&nbsp;</span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14"><span class="romans">Code Example:&nbsp;</span></p>
+    <p class="calibri14"><span class="romans">#square {</span></p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;margin: 100px;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;width: 100px;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;height: 100px;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans">&nbsp; &nbsp; &nbsp;background: #cc0;</span>
+    </p>
+    <p class="calibri14">
+      <span class="romans"
+        >&nbsp; &nbsp; &nbsp;animation: spin 4s linear infinite;</span
+      >
+    </p>
+    <p class="calibri14"><span class="romans">}</span></p>
+    <p class="calibri14"><span class="romans">&nbsp;</span></p>
+    <p class="calibri14">
+      <span class="romans"
+        >@keyframes spin { from { transform:rotate(0deg); } to {
+        transform:rotate(3600deg); } }</span
+      >
+    </p>
+    <p class="calibri17"><span class="romans">&nbsp;</span></p>
+    <p class="calibri18">
+      <span class="black-c"
+        ><a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template"
+          target="_blank"
+          ><span class="treb3">MDN The Content Template Element</span></a
+        ></span
+      ><span class="black-c">&nbsp;(Notes)</span>
+    </p>
+    <p class="calibri14"><span class="romans">&nbsp;</span></p>
+    <div class="calibri">
+      <ul class="under2">
+        <li class="calibri arrow-ind">
+          <strong
+            ><span class="f-size"
+              >&lt;template&gt; &nbsp;(The Content Template element)</span
+            ></strong
+          ><span class="romans3"
+            >: is a mechanism for holding HTML that is not to be rendered
+            immediately when a page is loaded but may be instantiated
+            subsequently during runtime using JavaScript.</span
+          >
+          <span class="line-h"
+            >Think of a template as a content fragment that is being stored for
+            subsequent use in the document.</span
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="calibri14">
+      <strong><span class="romans">Attributes</span></strong
+      ><span class="romans"
+        >: This element only includes the global attributes.</span
+      >
+    </p>
+    <p class="calibri14">
+      <strong><span class="romans">content property</span></strong
+      ><span class="romans"
+        >: is a read-only DocumentFragment containing the DOM subtree which the
+        template represents.</span
+      >
+    </p>
+    <p class="calibri17">
+      <strong
+        ><span class="romans">Avoiding DocumentFragment pitfall</span></strong
+      ><span class="romans"
+        >: A DocumentFragment is not a valid target for various events, as such
+        it is often preferable to clone or refer to the elements within
+        it.</span
+      >
+    </p>
+  </body>
 </html>
