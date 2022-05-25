@@ -4,7 +4,7 @@
 &emsp; &nbsp; &nbsp;(OR click on icon LINK below)                                                       
 
 &nbsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &nbsp; 
-[<img src="src/sources/portfolio_icon.svg" width="200">](https://jmmonjeremy.github.io/JmmonJeremy/)
+[<img src="/sources/portfolio_icon.svg" width="200">](https://jmmonjeremy.github.io/JmmonJeremy/)
 
 
 
