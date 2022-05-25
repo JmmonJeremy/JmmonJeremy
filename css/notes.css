@@ -637,3 +637,42 @@
   font-family: Consolas;
   color: #addbbc;
 }
+/* style="font-size:14px;line-height:115%;font-family:Consolas;color:#BED0E2;" */
+.consol11 {
+  font-size: 14px;
+  line-height: 115%;
+  font-family: Consolas;
+  color: #bed0e2;
+}
+/* style="font-size:14px;line-height:115%;font-family:Consolas;color:#E6EAEF;" */
+.consol12 {
+  font-size: 14px;
+  line-height: 115%;
+  font-family: Consolas;
+  color: #e6eaef;
+}
+/* style="color:white;" */
+.only-white {
+  color: white;
+}
+/* style='line-height:107%;font-family:"Cambria Math",serif;font-family:"Cambria Math",serif;font-size:12.0pt;' */
+.cam-math {
+  line-height: 107%;
+  font-family: "Cambria Math", serif;
+  font-family: "Cambria Math", serif;
+  font-size: 12pt;
+}
+/* style="font-size:14px;line-height:107%;font-family:Consolas;color:#AEB9C4;" */
+.consol13 {
+  font-size: 14px;
+  line-height: 107%;
+  font-family: Consolas;
+  color: #aeb9c4;
+}
+/* style='font-size:16px;line-height:115%;font-family:"Times New Roman",serif;color:white;' */
+.romans9 {
+  font-size: 16px;
+  line-height: 115%;
+  font-family: "Times New Roman", serif;
+  color: white;
+}
