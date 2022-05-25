@@ -1,7 +1,6 @@
-### &emsp; &nbsp;Jeremy's WDD330 Portfolio Link: https://jmmonjeremy.github.io/JmmonJeremy/
+### &emsp;  &emsp; &nbsp;Jeremy's WDD330 Portfolio Link: https://jmmonjeremy.github.io/JmmonJeremy/
 
-###### &emsp; &emsp; &nbsp; &nbsp; &nbsp; &emsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp;
-&emsp; &nbsp; &nbsp;(OR click on icon LINK below)                                                       
+###### &emsp; &emsp; &nbsp; &nbsp; &nbsp; &emsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp;&emsp; &nbsp; &nbsp;(OR click on icon LINK below)                                                       
 
 &nbsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; &emsp; &nbsp; &emsp; &nbsp; 
 [<img src="/sources/portfolio_icon.svg" width="200">](https://jmmonjeremy.github.io/JmmonJeremy/)
