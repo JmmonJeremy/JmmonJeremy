@@ -27,5 +27,8 @@
         "titleBar.activeForeground": "#5fdad6",
         "sideBarSectionHeader.background": "#447bc794"      
     
+    },
+    "editor.semanticTokenColorCustomizations": {
+    
     }
 }
