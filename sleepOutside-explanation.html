@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Jeremy T. Suchanski's explanation and 
+    solution page for his sleepOutside website project for WDD 330: Web Frontend 
+    Development at Brigham Young University - Idaho">
+    <title>SleepOutside Website Project Explanation & Solution Page | Jeremy T. Suchanski</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Permanent+Marker&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">   
+    <link rel="stylesheet" href="css/descriptions_small.css"> 
+    <link rel="stylesheet" href="css/descriptions_medium.css">
+    <link rel="stylesheet" href="css/descriptions_large.css">  
+</head>
+<body>
+  <header>
+    <section>
+        <h1 class="glowing_header">SleepOutside</h1>
+        <h2>Solution & Explanation</h2>       
+    </section>
+  </header>
+  <nav>
+    <ul>
+      <li>
+          <a href="index.html">WDD 330 Portfolio</a>
+      </li>
+      <li>
+          <a href="https://trello.com/b/s2W4DiIa" 
+            target="_blank">SleepOutside Trello Board</a>
+      </li>   
+      <li>
+          <a href="https://jmmonjeremy.github.io/L02_Team_Activity_1/build/" 
+            target="_blank">SleepOutside Website</a>
+      </li>
+      <li>
+          <a href="https://trello.com/b/Es8dcnYd" 
+            target="_blank">CloudShelf Trello Board</a>
+      </li>
+      <li>
+          <a href="https://wmsmckay.github.io/WDD330-groupProject/build/" 
+           target="_blank">Cloudshelf Website</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="grid-container two-up">
+    <section>
+        <div class="video_section" id="sleepOutside_video">
+            <a href="#" target="_blank">
+                <h1>Video Presentation Link</h1>
+                <img src="./sources/video-picture.jpg" alt="Portrait of Jeremy T. Suchanski">
+            </a>
+        </div>       
+        <h2 class="emphasized">SleepOutside Explanation</h2>
+        <p>I worked on several aspects of the SleepOutside Project. Here is a list of addtional 
+            features outside of the team assigned cards that I completed for the site.</p>
+        <ul>
+            <li>Add discount to product detail pages</li>
+            <li>Add item to cart broken</li>
+            <li>Animate cart (backpack) icon when item added to cart</li>
+            <li>cart.html error with empty cart</li>
+            <li>Discount flag on product detail</li>
+            <li>Discount indicator-product listing</li>
+            <li>Duplicate items in cart</li>
+            <li>Product Comments</li>
+            <li>Quick lookup</li>
+            <li>Remove from cart feature</li>
+        </ul>   
+    </section>
+    <section>
+        <h2 class="emphasized">SleepOutside Solution</h2>
+        <p>GitHub Pages does not allow http requests and gives an error. I came up with a work
+            around to be able to run our site through GitHub pages. I found the solution by 
+            searching for answers on the internet. (Just another example of me being able to bridge 
+            the gap of knowledge by finding other resources.) 
+        </p>
+        <p>In order to be able to run our the sleepOutside website through our GitHub pages you have 
+            to open the console and when you click on a product an error will show with the following 
+            website listed: 
+            "https://cors-anywhere.herokuapp.com/
+            http://157.201.228.93:2992/products/search/
+            sleeping-bags" 
+            or whatever product type you clicked on for the ending (tents, hammocks, backpacks). If you 
+            go to that site it will show a button to click for temporary permission. After you click on 
+            that it will allow you to run the site - pretty much like normal.
+        </p>
+        <p>There is a glitch to be aware of. If you click on all four product type going back and forth 
+            it will sometimes link to the incorrect product. I have had to do a hard reset and eventually I can 
+            get to each product with the links. I think because it is being transferred through this other site to 
+            become a https request it is the correct product link is getting lost sometimes and the one that was there 
+            before stays with it. That's a little annoying, but at least you can pretty much run and test the 
+            functionality of our sit and work with this work around.
+        </p>       
+     </section>     
+  </main>
+  <footer>
+    <p>
+      June of 2022 | Jeremy T. Suchanski | SleepOutside | WDD 330 Project - 
+      <a href="https://wmsmckay.github.io/WDD330-groupProject/build/" target="_blank">SleepOutside</a>
+    </p>    
+  </footer> 
+</body>
+</html>

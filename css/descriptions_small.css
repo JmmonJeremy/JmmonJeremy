@@ -364,6 +364,12 @@ body {
   div.wireframe_box3 {
     grid-row: 6; 
   }
+
+#sleepOutside_video {
+    margin-top: 82.5px;
+    margin-bottom: 82.5px;
+}
+
   .video_section {    
     text-align: center;
     border: 5px solid blue;
