@@ -14,4 +14,11 @@
     #body_list a {        
         float: right; 
     }
+
+    span.notes {
+        display:initial;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+   
 }

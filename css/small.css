@@ -56,7 +56,7 @@ main {
     line-height: 2;
     max-width: 355px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     justify-content: space-between;
     font-family: 'Gideon Roman', Trebuchet MS, cursive;
     font-size: 1.25em;
@@ -81,6 +81,13 @@ ul {
     padding-left: 1em;
     text-indent: -1em;
  }
+
+ span.notes {
+     display:flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+ }
+
 /* put list in the right spot */
 #body_list a { 
     white-space:nowrap;    
