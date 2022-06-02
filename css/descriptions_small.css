@@ -78,9 +78,13 @@ body {
 
   h2.subheader_cap {
     font-size: 1.5rem;
-    border-bottom: 4px solid #ad2222;
+    border-bottom: 4px solid #000;
     margin-bottom: 0;
     margin-left: 0;
+  }
+
+  h2.visual_example_title {
+      text-align: center;
   }
 
   p.qp, hr.qp {
@@ -88,7 +92,7 @@ body {
   }
 
   div.subheader_endcap {
-    border-bottom: 4px solid #ad2222
+    border-bottom: 4px solid #000;
   }
   
   h3 {
