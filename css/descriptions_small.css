@@ -75,6 +75,21 @@ body {
     font-size: 1.5rem;
     border-bottom: 4px solid #ad2222;
   }
+
+  h2.subheader_cap {
+    font-size: 1.5rem;
+    border-bottom: 4px solid #ad2222;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  p.qp, hr.qp {
+      margin: 0;
+  }
+
+  div.subheader_endcap {
+    border-bottom: 4px solid #ad2222
+  }
   
   h3 {
     font-size: .6rem;
